@@ -22,22 +22,8 @@ function Hero() {
         }}
         className="relative flex flex-col gap-4 items-center justify-center px-4 pt-20"
       >
-        {/* <div className="text-3xl md:text-7xl font-bold dark:text-white text-center font-dashboard">
-          Grow your Instagram With Real Followers
-        </div>
-        <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4 text-center max-w-[900px] font-dashboard">
-          Get 1000+ real followers every month Make your posts go viral
-          organically with human-powered Instagram growth.
-        </div>
-        <button
-          type="button"
-          className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2"
-        >
-          Start your 7-day free trial
-        </button> */}
-
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="group hero-h1-gradient _text-left sm:text-center whitespace-pre-wrap bg-clip-text text-transparent text-5xl font-bold tracking-[-1.5px] sm:tracking-[-2px] text-gray-900 text-[34px] sm:text-[45px] md:text-[50px] lg:text-[61px] lg:h-[135px] leading-[39px] sm:leading-[65px] font-dashboard">
+          <h1 className="group hero-h1-gradient _text-left sm:text-center whitespace-pre-wrap bg-clip-text text-transparent bg-gray-900 text-5xl font-bold tracking-[-1.5px] sm:tracking-[-2px] text-gray-900 text-[34px] sm:text-[45px] md:text-[50px] lg:text-[61px] lg:h-[135px] leading-[39px] sm:leading-[65px] font-dashboard">
             <span className="mr-2 sm:mr-0">Grow your Instagram</span>
             <br />
             <span className="mr-2 sm:mr-0">With Real Followers</span>
