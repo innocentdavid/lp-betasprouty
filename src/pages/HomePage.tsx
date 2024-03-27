@@ -1,13 +1,25 @@
 export default function HomePage() {
   return (
-    <div className="">
-      <Hero />
-    </div>
+    <>
+      <div className="">
+        <Hero />
+      </div>
+
+      <div className="py-6">
+        <div className="text-[28px] md:text-[32px] lg:text-[64px] lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto mb-10 lg:mb-20">
+          Grow your Instagram quickly & efficiently
+        </div>
+        <BentoGridThirdDemo />
+      </div>
+    </>
   );
 }
 
 import { motion } from "framer-motion";
 import { AuroraBackground } from "../components/ui/aurora-background";
+import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
+import { cn } from "../utils/cn";
+import { AnimatedTooltip } from "../components/ui/animated-tooltip";
 
 function Hero() {
   return (
@@ -23,10 +35,14 @@ function Hero() {
         className="relative flex flex-col gap-4 items-center justify-center px-4 pt-20"
       >
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="group hero-h1-gradient _text-left sm:text-center whitespace-pre-wrap bg-clip-text text-transparent bg-gray-900 text-5xl font-bold tracking-[-1.5px] sm:tracking-[-2px] text-gray-900 text-[34px] sm:text-[45px] md:text-[50px] lg:text-[61px] lg:h-[135px] leading-[39px] sm:leading-[65px] font-dashboard">
-            <span className="mr-2 sm:mr-0">Grow your Instagram</span>
-            <br />
-            <span className="mr-2 sm:mr-0">With Real Followers</span>
+          <h1 className="group hero-h1-gradient _text-left sm:text-center whitespace-pre-wrap bg-clip-text text-transparent bg-gray-900 text-5xl _font-bold tracking-[-1.5px] sm:tracking-[-2px] text-gray-900 sm:text-[45px] md:text-[50px] lg:text-[61px] _lg:h-[135px] leading-[39px] sm:leading-[65px] font-dashboard">
+            <span className="mr-2 sm:mr-0 font-black text-[34px] md:text-[48px] lg:text-[84px] lg:leading-[90px]">
+              Grow your Instagram
+            </span>
+            <br className="py-4" />
+            <span className="mr-2 sm:mr-0 font-black text-[34px] md:text-[48px] lg:text-[84px] lg:leading-[90px]">
+              With Real Followers
+            </span>
           </h1>
           <p className="mt-4 mb-2 sm:mb-0 sm:mt-6 sm:text-[21px] text-xl font-medium sm:leading-[32px] leading-snug text-gray-600 _text-left sm:text-center">
             Get 1000+ real followers every month
@@ -178,9 +194,9 @@ function Hero() {
             <div className="inline-block">
               <div className="flex items-center flex-wrap justify-center gap-4 md:gap-0">
                 <div className="flex-shrink-0 pb-0 pr-4 sm:flex">
-                  <div className="flex justify-center -space-x-3">
+                  {/* <div className="flex justify-center -space-x-3">
                     <img
-                      alt="UpGrow Customer Avatar 1"
+                      alt="SproutySocial Customer Avatar 1"
                       loading="eager"
                       width="32"
                       height="32"
@@ -188,11 +204,10 @@ function Hero() {
                       data-nimg="1"
                       className="inline-block w-8 h-8 transition-transform duration-200 ease-in-out rounded-full ring-2 ring-white hover:-translate-y-1 text-transparent z-[1]"
                       // style="color:transparent;z-index:1"
-                      srcSet="https://www.upgrow.com/_next/image?url=%2Fimg%2Fgraphics%2Fupgrow-customer-1.jpeg&amp;w=32&amp;q=75 1x, /_next/image?url=%2Fimg%2Fgraphics%2Fupgrow-customer-1.jpeg&amp;w=64&amp;q=75 2x"
-                      src="https://www.upgrow.com/_next/image?url=%2Fimg%2Fgraphics%2Fupgrow-customer-1.jpeg&amp;w=64&amp;q=75"
+                      src="/images/sproutysocial-customer-1.webp"
                     />
                     <img
-                      alt="UpGrow Customer Avatar 2"
+                      alt="SproutySocial Customer Avatar 2"
                       loading="eager"
                       width="32"
                       height="32"
@@ -200,11 +215,10 @@ function Hero() {
                       data-nimg="1"
                       className="inline-block w-8 h-8 transition-transform duration-200 ease-in-out rounded-full ring-2 ring-white hover:-translate-y-1 text-transparent z-[2]"
                       // style="color:transparent;z-index:2"
-                      srcSet="https://www.upgrow.com/_next/image?url=%2Fimg%2Fgraphics%2Fupgrow-customer-2.jpeg&amp;w=32&amp;q=75 1x, /_next/image?url=%2Fimg%2Fgraphics%2Fupgrow-customer-2.jpeg&amp;w=64&amp;q=75 2x"
-                      src="https://www.upgrow.com/_next/image?url=%2Fimg%2Fgraphics%2Fupgrow-customer-2.jpeg&amp;w=64&amp;q=75"
+                      src="/images/sproutysocial-customer-2.webp"
                     />
                     <img
-                      alt="UpGrow Customer Avatar 3"
+                      alt="SproutySocial Customer Avatar 3"
                       loading="eager"
                       width="32"
                       height="32"
@@ -212,11 +226,10 @@ function Hero() {
                       data-nimg="1"
                       className="inline-block w-8 h-8 transition-transform duration-200 ease-in-out rounded-full ring-2 ring-white hover:-translate-y-1 text-transparent z-[3]"
                       // style="color:transparent;z-index:3"
-                      srcSet="https://www.upgrow.com/_next/image?url=%2Fimg%2Fgraphics%2Fupgrow-customer-3.jpeg&amp;w=32&amp;q=75 1x, /_next/image?url=%2Fimg%2Fgraphics%2Fupgrow-customer-3.jpeg&amp;w=64&amp;q=75 2x"
-                      src="https://www.upgrow.com/_next/image?url=%2Fimg%2Fgraphics%2Fupgrow-customer-3.jpeg&amp;w=64&amp;q=75"
+                      src="/images/sproutysocial-customer-3.webp"
                     />
                     <img
-                      alt="UpGrow Customer Avatar 4"
+                      alt="SproutySocial Customer Avatar 4"
                       loading="eager"
                       width="32"
                       height="32"
@@ -224,8 +237,7 @@ function Hero() {
                       data-nimg="1"
                       className="inline-block w-8 h-8 transition-transform duration-200 ease-in-out rounded-full ring-2 ring-white hover:-translate-y-1 text-transparent z-[4]"
                       // style="color:transparent;z-index:4"
-                      srcSet="https://www.upgrow.com/_next/image?url=%2Fimg%2Fgraphics%2Fupgrow-customer-4.jpeg&amp;w=32&amp;q=75 1x, /_next/image?url=%2Fimg%2Fgraphics%2Fupgrow-customer-4.jpeg&amp;w=64&amp;q=75 2x"
-                      src="https://www.upgrow.com/_next/image?url=%2Fimg%2Fgraphics%2Fupgrow-customer-4.jpeg&amp;w=64&amp;q=75"
+                      src="/images/sproutysocial-customer-4.webp"
                     />
                     <span
                       className="inline-flex items-center justify-center h-8 bg-gray-800 rounded-full w-9 ring-2 ring-white dark:bg-gray-900 dark:ring-gray-800 z-[5]"
@@ -235,64 +247,86 @@ function Hero() {
                         58K+
                       </span>
                     </span>
-                  </div>
+                  </div> */}
+                  <AnimatedTooltipPreview />
                 </div>
 
-                <div className="flex flex-col flex-1 text-left">
-                  <div className="flex items-center">
-                    <div className="flex">
-                      <svg
-                        viewBox="0 0 20 20"
-                        aria-hidden="true"
-                        className="h-5 w-5 fill-yellow-300"
-                      >
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                      </svg>
-                      <svg
-                        viewBox="0 0 20 20"
-                        aria-hidden="true"
-                        className="h-5 w-5 fill-yellow-300"
-                      >
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                      </svg>
-                      <svg
-                        viewBox="0 0 20 20"
-                        aria-hidden="true"
-                        className="h-5 w-5 fill-yellow-300"
-                      >
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                      </svg>
-                      <svg
-                        viewBox="0 0 20 20"
-                        aria-hidden="true"
-                        className="h-5 w-5 fill-yellow-300"
-                      >
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                      </svg>
-                      <svg
-                        viewBox="0 0 20 20"
-                        aria-hidden="true"
-                        className="h-5 w-5 fill-yellow-300"
-                      >
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                      </svg>
+                <div className="div-flex-3">
+                  <div className="div-flex-4">
+                    <div className="div-flex-5">
+                      <div className="svg-3">
+                        <img
+                          src="/icons/star.svg"
+                          loading="lazy"
+                          width="14.868390083312988"
+                          height="14.240479469299316"
+                          alt=""
+                          className="vectors-wrapper-7"
+                        />
+                      </div>
+                      <div className="svg-3">
+                        <img
+                          src="/icons/star.svg"
+                          loading="lazy"
+                          width="14.868390083312988"
+                          height="14.240479469299316"
+                          alt=""
+                          className="vectors-wrapper-7"
+                        />
+                      </div>
+                      <div className="svg-3">
+                        <img
+                          src="/icons/star.svg"
+                          loading="lazy"
+                          width="14.868390083312988"
+                          height="14.240479469299316"
+                          alt=""
+                          className="vectors-wrapper-7"
+                        />
+                      </div>
+                      <div className="svg-3">
+                        <img
+                          src="/icons/star.svg"
+                          loading="lazy"
+                          width="14.868390083312988"
+                          height="14.240479469299316"
+                          alt=""
+                          className="vectors-wrapper-7"
+                        />
+                      </div>
+                      <div className="svg-3">
+                        <img
+                          src="/icons/star.svg"
+                          loading="lazy"
+                          width="14.868390083312988"
+                          height="14.240479469299316"
+                          alt=""
+                          className="vectors-wrapper-7"
+                        />
+                      </div>
                     </div>
-                    <span className="ml-2 mt-[2px] leading-[1px]">
-                      <b>4.98</b>/5
-                    </span>
+                    <div className="text-15">
+                      <div className="text-15 text-15">
+                        <span className="text-black text-base font-bold leading-[1px]">
+                          4.9
+                        </span>
+                        <span className="text-black text-base font-normal leading-[1px]">
+                          /5
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                  <p className="text-sm text-gray-800 whitespace-nowrap">
-                    Trusted by 58,980+ users
-                  </p>
+                  <div className="text-16">Based on 350+ reviews</div>
                 </div>
 
-                <div className="flex justify-center ml-4">
+                {/* <div className="flex justify-center ml-4">
                   <button
+                    type="button"
                     className="relative flex items-center justify-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group"
                     aria-label="Watch the video"
                   >
                     <img
-                      alt="UpGrow Demo Video Thumbnail"
+                      alt="SproutySocial Demo Video Thumbnail"
                       fetchPriority="high"
                       width="85"
                       height="47"
@@ -300,8 +334,7 @@ function Hero() {
                       data-nimg="1"
                       className="transition-all duration-700 ease-in-out rounded-lg shadow-sm opacity-50 hover:shadow-lg hover:opacity-100 transform-gpu animate-sway"
                       //   style="color:transparent"
-                      srcSet="https://www.upgrow.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fupgrow-video-thumbnail.fcb7a4c3.webp&amp;w=96&amp;q=60 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fupgrow-video-thumbnail.fcb7a4c3.webp&amp;w=256&amp;q=60 2x"
-                      src="https://www.upgrow.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fupgrow-video-thumbnail.fcb7a4c3.webp&amp;w=256&amp;q=60"
+                      src="/images/sproutysocial-video-thumbnail.webp"
                     />
                     <svg
                       className="absolute transition-all ease-in-out scale-75 pointer-events-none group group-hover:scale-90 opacity-80 group-hover:opacity-100"
@@ -321,12 +354,418 @@ function Hero() {
                       ></path>
                     </svg>
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
       </motion.div>
     </AuroraBackground>
+  );
+}
+
+// import {
+//   IconBoxAlignRightFilled,
+//   IconClipboardCopy,
+//   IconFileBroken,
+//   IconSignature,
+//   IconTableColumn,
+// } from "@tabler/icons-react";
+
+export function BentoGridThirdDemo() {
+  return (
+    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+      {items.map((item, i) => (
+        <BentoGridItem
+          key={i}
+          title={item.title}
+          description={item.description}
+          header={item.header}
+          className={cn("[&>p:text-lg]", item.className)}
+          icon={item.icon}
+        />
+      ))}
+    </BentoGrid>
+  );
+}
+// const Skeleton = () => (
+//   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black"></div>
+// );
+
+const SkeletonOne = () => {
+  const variants = {
+    initial: {
+      x: 0,
+    },
+    animate: {
+      x: 10,
+      rotate: 5,
+      transition: {
+        duration: 0.2,
+      },
+    },
+  };
+  const variantsSecond = {
+    initial: {
+      x: 0,
+    },
+    animate: {
+      x: -10,
+      rotate: -5,
+      transition: {
+        duration: 0.2,
+      },
+    },
+  };
+
+  return (
+    <motion.div
+      initial="initial"
+      whileHover="animate"
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
+    >
+      <motion.div
+        variants={variants}
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-white dark:bg-black"
+      >
+        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
+      </motion.div>
+      <motion.div
+        variants={variantsSecond}
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
+      >
+        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
+        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+      </motion.div>
+      <motion.div
+        variants={variants}
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-black"
+      >
+        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
+      </motion.div>
+    </motion.div>
+  );
+};
+const SkeletonTwo = () => {
+  const variants = {
+    initial: {
+      width: 0,
+    },
+    animate: {
+      width: "100%",
+      transition: {
+        duration: 0.2,
+      },
+    },
+    hover: {
+      width: ["0%", "100%"],
+      transition: {
+        duration: 2,
+      },
+    },
+  };
+  const arr = new Array(6).fill(0);
+  return (
+    <motion.div
+      initial="initial"
+      animate="animate"
+      whileHover="hover"
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
+    >
+      {arr.map((_, i) => (
+        <motion.div
+          key={"skelenton-two" + i}
+          variants={variants}
+          style={{
+            maxWidth: Math.random() * (100 - 40) + 40 + "%",
+          }}
+          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
+        ></motion.div>
+      ))}
+    </motion.div>
+  );
+};
+const SkeletonThree = () => {
+  const variants = {
+    initial: {
+      backgroundPosition: "0 50%",
+    },
+    animate: {
+      backgroundPosition: ["0, 50%", "100% 50%", "0 50%"],
+    },
+  };
+  return (
+    <motion.div
+      initial="initial"
+      animate="animate"
+      variants={variants}
+      transition={{
+        duration: 5,
+        repeat: Infinity,
+        repeatType: "reverse",
+      }}
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] rounded-lg bg-dot-black/[0.2] flex-col space-y-2"
+      style={{
+        background:
+          "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
+        backgroundSize: "400% 400%",
+      }}
+    >
+      <motion.div className="h-full w-full rounded-lg"></motion.div>
+    </motion.div>
+  );
+};
+const SkeletonFour = () => {
+  const first = {
+    initial: {
+      x: 20,
+      rotate: -5,
+    },
+    hover: {
+      x: 0,
+      rotate: 0,
+    },
+  };
+  const second = {
+    initial: {
+      x: -20,
+      rotate: 5,
+    },
+    hover: {
+      x: 0,
+      rotate: 0,
+    },
+  };
+  return (
+    <motion.div
+      initial="initial"
+      animate="animate"
+      whileHover="hover"
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2"
+    >
+      <motion.div
+        variants={first}
+        className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
+      >
+        <img
+          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          alt="avatar"
+          height="100"
+          width="100"
+          className="rounded-full h-10 w-10"
+        />
+        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
+          Just code in Vanilla Javascript
+        </p>
+        <p className="border border-red-500 bg-red-100 dark:bg-red-900/20 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
+          Delusional
+        </p>
+      </motion.div>
+      <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
+        <img
+          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          alt="avatar"
+          height="100"
+          width="100"
+          className="rounded-full h-10 w-10"
+        />
+        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
+          Tailwind CSS is cool, you know
+        </p>
+        <p className="border border-green-500 bg-green-100 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
+          Sensible
+        </p>
+      </motion.div>
+      <motion.div
+        variants={second}
+        className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
+      >
+        <img
+          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          alt="avatar"
+          height="100"
+          width="100"
+          className="rounded-full h-10 w-10"
+        />
+        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
+          I love angular, RSC, and Redux.
+        </p>
+        <p className="border border-orange-500 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
+          Helpless
+        </p>
+      </motion.div>
+    </motion.div>
+  );
+};
+const SkeletonFive = () => {
+  const variants = {
+    initial: {
+      x: 0,
+    },
+    animate: {
+      x: 10,
+      rotate: 5,
+      transition: {
+        duration: 0.2,
+      },
+    },
+  };
+  const variantsSecond = {
+    initial: {
+      x: 0,
+    },
+    animate: {
+      x: -10,
+      rotate: -5,
+      transition: {
+        duration: 0.2,
+      },
+    },
+  };
+
+  return (
+    <motion.div
+      initial="initial"
+      whileHover="animate"
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
+    >
+      <motion.div
+        variants={variants}
+        className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+      >
+        <img
+          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          alt="avatar"
+          height="100"
+          width="100"
+          className="rounded-full h-10 w-10"
+        />
+        <p className="text-xs text-neutral-500">
+          There are a lot of cool framerworks out there like React, Angular,
+          Vue, Svelte that can make your life ....
+        </p>
+      </motion.div>
+      <motion.div
+        variants={variantsSecond}
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
+      >
+        <p className="text-xs text-neutral-500">Use PHP.</p>
+        <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
+      </motion.div>
+    </motion.div>
+  );
+};
+const items = [
+  {
+    title: "AI Content Generation",
+    description: (
+      <span className="text-sm">
+        Experience the power of AI in generating unique content.
+      </span>
+    ),
+    header: <SkeletonOne />,
+    className: "md:col-span-1",
+    // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    icon: "",
+  },
+  {
+    title: "Automated Proofreading",
+    description: (
+      <span className="text-sm">
+        Let AI handle the proofreading of your documents.
+      </span>
+    ),
+    header: <SkeletonTwo />,
+    className: "md:col-span-1",
+    // icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    icon: "",
+  },
+  {
+    title: "Contextual Suggestions",
+    description: (
+      <span className="text-sm">
+        Get AI-powered suggestions based on your writing context.
+      </span>
+    ),
+    header: <SkeletonThree />,
+    className: "md:col-span-1",
+    // icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    icon: "",
+  },
+  {
+    title: "Sentiment Analysis",
+    description: (
+      <span className="text-sm">
+        Understand the sentiment of your text with AI analysis.
+      </span>
+    ),
+    header: <SkeletonFour />,
+    className: "md:col-span-2",
+    // icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    icon: "",
+  },
+
+  {
+    title: "Text Summarization",
+    description: (
+      <span className="text-sm">
+        Summarize your lengthy documents with AI technology.
+      </span>
+    ),
+    header: <SkeletonFive />,
+    className: "md:col-span-1",
+    // icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+    icon: "",
+  },
+];
+
+const people = [
+  {
+    id: 1,
+    name: "@olesyaleuenberger",
+    designation: "Miss Switzerland 2023",
+    image: "/images/c1.jpeg",
+  },
+  {
+    id: 2,
+    name: "@gostisceirsic",
+    designation: "Small business",
+    image: "/images/c2.jpeg",
+  },
+  {
+    id: 3,
+    name: "@chrisvis",
+    designation: "Swimmer & Model",
+    image: "/images/c3.jpeg",
+  },
+  {
+    id: 4,
+    name: "@pockychocospaniel",
+    designation: "Puppy profile",
+    image: "/images/c4.jpeg",
+  },
+  {
+    id: 5,
+    name: "@topolovecvito",
+    designation: "Influencer",
+    image: "/images/c5.jpeg",
+  },
+];
+
+export function AnimatedTooltipPreview() {
+  return (
+    <div className="flex flex-row items-center justify-center _mb-10 w-full">
+      <AnimatedTooltip items={people} />
+      <span
+        className="inline-flex items-center justify-center h-[42px] w-[42px] bg-gray-800 rounded-full ring-2 ring-white dark:bg-gray-900 dark:ring-gray-800 z-[5]"
+        //  style="z-index:5"
+      >
+        <span className="text-xs font-medium leading-none text-white uppercase">
+          58K+
+        </span>
+      </span>
+    </div>
   );
 }

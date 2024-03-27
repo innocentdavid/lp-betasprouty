@@ -21,7 +21,7 @@ export default function Navbar() {
                   data-nimg="1"
                   className="inline-block h-8 w-auto _transform transform-gpu transition-all duration-500 ease-in-out group-hover:translate-x-1 group-hover:rotate-[360deg] group-hover:scale-[87%] text-transparent"
                   //   style="color:transparent"
-                  src="https://app.sproutysocial.com/_next/image?url=%2Flogo-light-long.png&w=640&q=75"
+                  src="/logo-light-long.png"
                 /> */}
                 <img
                   alt="SproutySocial logo text"
@@ -35,7 +35,7 @@ export default function Navbar() {
                   className="inline-block w-auto h-10 text-transparent"
                   //   style="color:transparent"
                 //   src="https://www.upgrow.com/img/upgrow-logo-text-minified.svg"
-                  src="https://app.sproutysocial.com/_next/image?url=%2Flogo-light-long.png&w=640&q=100"
+                  src="/logo-light-long.png"
                 />
                 {/* <span
                   className="inline-block ml-[5px] bg-black text-white p-[3px_9px] rounded-[8px] font-bold antialiased font-dashboard text-[13px] mt-1"
