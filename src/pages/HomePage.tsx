@@ -11,6 +11,11 @@ export default function HomePage() {
         </div>
         <BentoGridThirdDemo />
       </div>
+
+      <Testimonials />
+
+      <br />
+      <br />
     </>
   );
 }
@@ -20,6 +25,7 @@ import { AuroraBackground } from "../components/ui/aurora-background";
 import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
 import { cn } from "../utils/cn";
 import { AnimatedTooltip } from "../components/ui/animated-tooltip";
+import Testimonials from "./homepageComponents/testimonials";
 
 function Hero() {
   return (
