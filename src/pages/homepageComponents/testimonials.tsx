@@ -10,7 +10,7 @@ export default function Testimonials() {
       </p>
     </div>
 
-    <div className="flex gap-4 px-3 md:px-12 mt-8 w-full overflow-x-auto no-scrollbar">
+    <div className="flex xl:justify-center gap-4 px-3 md:px-12 mt-8 w-full overflow-x-auto no-scrollbar">
         <div className="relative min-h-[700px] bg-black rounded-md min-w-[280px] md:min-w-[320px] lg:max-w-[500px]">
             <img src="/icons/play-btn.svg" alt="play-btn" className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 grayscale-[20%] hover:grayscale-0 cursor-pointer" />
         </div>

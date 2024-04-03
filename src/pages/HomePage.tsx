@@ -14,6 +14,8 @@ export default function HomePage() {
 
       <Testimonials />
 
+      <DashPreview />
+
       <br />
       <br />
     </>
@@ -26,6 +28,7 @@ import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
 import { cn } from "../utils/cn";
 import { AnimatedTooltip } from "../components/ui/animated-tooltip";
 import Testimonials from "./homepageComponents/testimonials";
+import DashPreview from "./homepageComponents/dashPreview";
 
 function Hero() {
   return (
@@ -80,7 +83,7 @@ function Hero() {
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
-                    stroke-width="0"
+                    stroke-width={0}
                     viewBox="0 0 448 512"
                     className="mr-3 drop-shadow-lg w-[1.35rem] h-[1.35rem] -ml-[8px]"
                     height="1em"
