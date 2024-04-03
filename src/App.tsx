@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <>
+    <div className="bg-[#F9F9FA] text-black">
       <Navbar />
       <BrowserRouter>
         <Routes>
@@ -17,7 +17,7 @@ function App() {
           {/* <Route path="/dashboard" element={<Dashboard />} /> */}
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
