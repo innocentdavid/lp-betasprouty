@@ -27,7 +27,7 @@ import { AuroraBackground } from "../components/ui/aurora-background";
 import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
 import { cn } from "../utils/cn";
 import { AnimatedTooltip } from "../components/ui/animated-tooltip";
-import Testimonials from "./homepageComponents/testimonials";
+import Testimonials from "./homepageComponents/videoTestimonials";
 import DashPreview from "./homepageComponents/dashPreview";
 
 function Hero() {
