@@ -5,6 +5,7 @@ import VideoTestimonials from "./homepageComponents/videoTestimonials";
 import DashPreview from "./homepageComponents/dashPreview";
 import FAQ from "./homepageComponents/FAQ";
 import Testimonials from "./homepageComponents/Testimonials";
+import Footer from "../components/Footer";
 
 export default function HomePage() {
   return (
@@ -21,8 +22,7 @@ export default function HomePage() {
 
       <FAQ />
 
-      <br />
-      <br />
+      <Footer />
     </>
   );
 }
