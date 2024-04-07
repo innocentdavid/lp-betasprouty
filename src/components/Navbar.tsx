@@ -10,19 +10,6 @@ export default function Navbar() {
           <div className="relative z-10 flex items-center gap-16">
             <a href="/">
               <div className="group flex items-center gap-2 w-auto h-10">
-                {/* <img
-                  alt="SproutySocial logo icon"
-                  title="SproutySocial logo icon"
-                  fetchPriority="high"
-                  loading="eager"
-                  width="32"
-                  height="32"
-                  decoding="async"
-                  data-nimg="1"
-                  className="inline-block h-8 w-auto _transform transform-gpu transition-all duration-500 ease-in-out group-hover:translate-x-1 group-hover:rotate-[360deg] group-hover:scale-[87%] text-transparent"
-                  //   style="color:transparent"
-                  src="/logo-light-long.png"
-                /> */}
                 <img
                   alt="SproutySocial logo text"
                   title="SproutySocial logo text"
@@ -37,12 +24,6 @@ export default function Navbar() {
                 //   src="https://www.upgrow.com/img/upgrow-logo-text-minified.svg"
                   src="/logo-light-long.png"
                 />
-                {/* <span
-                  className="inline-block ml-[5px] bg-black text-white p-[3px_9px] rounded-[8px] font-bold antialiased font-dashboard text-[13px] mt-1"
-                  //   style="margin-left:5px;background:#000;color:white;padding:3px 9px;border-radius:8px;font-family:Gtwalsheimpro,sans-serif;font-weight:700;-webkit-font-smoothing:antialiased;font-size:13px"
-                >
-                  GPT-4 Powered
-                </span> */}
               </div>
             </a>
           </div>

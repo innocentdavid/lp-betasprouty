@@ -8,17 +8,21 @@ import { motion, AnimatePresence } from "framer-motion";
 // }
 
 const allIngredients = [
-  { icon: "🍅", label: "Tomato" },
-  { icon: "🥬", label: "Lettuce" },
-  { icon: "🧀", label: "Cheese" },
-  { icon: "🥕", label: "Carrot" },
-  { icon: "🍌", label: "Banana" },
-  { icon: "🫐", label: "Blueberries" },
-  { icon: "🥂", label: "Champers?" },
+  {
+    icon: "🍅",
+    label: "Live Analytics",
+    image: "/images/dashPrev/Live Analytics.png",
+  },
+  { icon: "🥬", label: "Growth", image: "/images/dashPrev/Growth.png" },
+  { icon: "🧀", label: "Manage", image: "/images/dashPrev/Manage.png" },
+  // { icon: "🥕", label: "Carrot" },
+  // { icon: "🍌", label: "Banana" },
+  // { icon: "🫐", label: "Blueberries" },
+  // { icon: "🥂", label: "Champers?" },
 ];
 
-const [tomato, lettuce, cheese] = allIngredients;
-const initialTabs = [tomato, lettuce, cheese];
+const [LiveAnalytics, Growth, Manage] = allIngredients;
+const initialTabs = [LiveAnalytics, Growth, Manage];
 
 // function getNextIngredient(ingredients: Ingredient[]): Ingredient | undefined {
 //   const existing = new Set(ingredients);
@@ -28,66 +32,60 @@ const initialTabs = [tomato, lettuce, cheese];
 const descs: any = {
   0: [
     {
-      title: "✨ Record in 4K.",
-      content: "Capture your screen and camera in the highest quality.",
+      title: "✨ See in real-time.",
+      content: "Track your follower's growth each time you open the app.",
     },
     {
-      title: "🖥️ Select area.",
-      content: "Choose exactly the part of your screen you want to capture.",
+      title: "🖥️ Check the latest session.",
+      content: "See how much and which interactions your account performed.",
     },
     {
-      title: "💾 Auto-uploaded.",
-      content:
-        "Everything captured is saved to your Tella account, ready for editing or sharing, instantly.",
+      title: "⚙️ Switch between.",
+      content: "Easily switch between your accounts with a single click.",
     },
     {
-      title: "👻 Invisible UI.",
-      content:
-        "Our UI won’t appear in your video. Start, stop, and read your notes without viewers noticing.",
+      title: "📈 Simple overview.",
+      content: "Glance over your account performance in a flash.",
     },
   ],
   1: [
     {
-      title: "🌐 Browser power.",
+      title: "💎 Add targets.",
       content:
-        "Tella runs in Arc, Brave, Edge, Safari, Firefox, and more! And Chrome :)",
+        "Write a username of a similar profile to yours or your competitor’s.",
     },
     {
-      title: "📈 Slides mode.",
-      content:
-        "Import slides and present them in Tella — for slick video presentations in minutes.",
+      title: "💯 View performance.",
+      content: "Quickly view the performance of the added target account.",
     },
     {
-      title: "🎞️ Clip by clip.",
-      content:
-        "Record videos in separate, shorter clips. So you can nail your delivery and eliminate editing.",
+      title: "✨ Add with AI.",
+      content: "Let the power of deep learning add your targets automatically.",
     },
     {
-      title: "🗒️ Speaker notes.",
+      title: "🗑️ Archive accounts.",
       content:
-        "Jot down ideas, stay on topic, or read line by line with our speaker notes tab.",
+        "Is target not performing well? Simply archive them with one click.",
     },
   ],
   2: [
     {
-      title: "⚡️ Quick mode!",
-      content:
-        "Perfect for quick videos. Start a video in two clicks, share it in four.",
+      title: "👨🏻‍💻 Dedicated account manager.",
+      content: "Ask any question regarding Instagram at anytime.",
     },
     {
-      title: "🔌 More than Chrome.",
-      content:
-        "No Chrome? No worries. Chrome extensions also work in Arc, Brave, Edge and more.",
+      title: "⚫️ Blacklist an account.",
+      content: "Add those who you wish we do not interact with.",
     },
     {
-      title: "🔄 Restart recording.",
+      title: "⚪️ Whitelist an account.",
       content:
-        "If you mess up the beginning just hit restart. Third time’s a charm.",
+        "Quickly add an account interacted by us and we’ll re-interact with them.",
     },
     {
-      title: "🎞️ Clip by clip.",
+      title: "📲 Connect seamlessly.",
       content:
-        "Record videos in separate, shorter clips. So you can nail your delivery and eliminate editing.",
+        "Easily connect and manage multiple accounts from your dashboard.",
     },
   ],
 };
@@ -97,6 +95,7 @@ export default function DashPreview() {
   const [selectedTab, setSelectedTab] = useState<{
     icon: string;
     label: string;
+    image: string;
   }>(tabs[0]);
 
   return (
@@ -105,7 +104,7 @@ export default function DashPreview() {
       // name="Apps"
       className="my-16 md:my-40 flex flex-col items-center justify-center gap-20 min-h-[min-content] bg-gradient-to-b from-rose-500 to-orange-400 py-10 md:py-40 px-150 relative overflow-hidden w-full"
     >
-        {/* Background */}
+      {/* Background */}
       <div
         // name="Background"
         className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 bg-gradient-to-t from-rose-500 to-orange-400 mix-blend-overlay flex-none"
@@ -136,6 +135,7 @@ export default function DashPreview() {
               <img
                 src="https://framerusercontent.com/images/yCl0qMtLdN4ajk5NSM3tFjvXUjQ.webp"
                 alt=""
+                loading="lazy"
                 style={{
                   display: "block",
                   width: "100%",
@@ -172,6 +172,7 @@ export default function DashPreview() {
               <img
                 src="https://framerusercontent.com/images/HMp0xBcr9IuweOnyO7eaWOAfP7Q.webp?scale-down-to=1024"
                 alt=""
+                loading="lazy"
                 style={{
                   display: "block",
                   width: "100%",
@@ -229,7 +230,15 @@ export default function DashPreview() {
                 exit={{ y: -10, opacity: 0 }}
                 transition={{ duration: 0.2 }}
               >
-                {selectedTab ? selectedTab.icon : "😋"}
+                {/* {selectedTab ? selectedTab.icon : "😋"} */}
+                <img
+                  src={selectedTab.image}
+                  alt=""
+                  loading="lazy"
+                  width={500}
+                  height={300}
+                  className="max-w-[300px] md:max-w-[500px]"
+                />
               </motion.div>
             </AnimatePresence>
           </main>

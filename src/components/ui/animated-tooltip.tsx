@@ -73,6 +73,7 @@ export const AnimatedTooltip = ({
           <img
             onMouseMove={handleMouseMove}
             height={100}
+            loading="lazy"
             width={100}
             src={item.image}
             alt={item.name}

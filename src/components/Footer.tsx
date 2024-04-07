@@ -8,8 +8,8 @@ export default function Footer() {
           <img
             alt="SproutySocial logo text"
             title="SproutySocial logo text"
-            fetchPriority="high"
-            loading="eager"
+            // fetchPriority="high"
+            loading="lazy"
             width="640"
             height="40"
             decoding="async"

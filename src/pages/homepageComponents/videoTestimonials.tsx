@@ -124,11 +124,13 @@ export default function VideoTestimonials() {
                     <div className="">
                       <img
                         src={Vtestimonial.playIcon}
+                        loading="lazy"
                         alt="play-btn"
                         className="w-[95px] h-auto rounded-full overflow-hidden group-hover:hidden"
                       />
                       <img
                         src="/icons/play-btn.svg"
+                        loading="lazy"
                         alt="play-btn"
                         className="w-[95px] h-auto hidden group-hover:block"
                       />

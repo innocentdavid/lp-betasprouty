@@ -6,6 +6,7 @@ import DashPreview from "./homepageComponents/dashPreview";
 import FAQ from "./homepageComponents/FAQ";
 import Testimonials from "./homepageComponents/Testimonials";
 import Footer from "../components/Footer";
+import BentoGridCompt from "./homepageComponents/BentoGrid";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,8 @@ export default function HomePage() {
       <div className="">
         <Hero />
       </div>
+
+      <BentoGridCompt />
 
       <Testimonials />
 
@@ -200,60 +203,6 @@ function Hero() {
             <div className="inline-block">
               <div className="flex items-center flex-wrap justify-center gap-4 md:gap-0">
                 <div className="flex-shrink-0 pb-0 pr-4 sm:flex">
-                  {/* <div className="flex justify-center -space-x-3">
-                    <img
-                      alt="SproutySocial Customer Avatar 1"
-                      loading="eager"
-                      width="32"
-                      height="32"
-                      decoding="async"
-                      data-nimg="1"
-                      className="inline-block w-8 h-8 transition-transform duration-200 ease-in-out rounded-full ring-2 ring-white hover:-translate-y-1 text-transparent z-[1]"
-                      // style="color:transparent;z-index:1"
-                      src="/images/sproutysocial-customer-1.webp"
-                    />
-                    <img
-                      alt="SproutySocial Customer Avatar 2"
-                      loading="eager"
-                      width="32"
-                      height="32"
-                      decoding="async"
-                      data-nimg="1"
-                      className="inline-block w-8 h-8 transition-transform duration-200 ease-in-out rounded-full ring-2 ring-white hover:-translate-y-1 text-transparent z-[2]"
-                      // style="color:transparent;z-index:2"
-                      src="/images/sproutysocial-customer-2.webp"
-                    />
-                    <img
-                      alt="SproutySocial Customer Avatar 3"
-                      loading="eager"
-                      width="32"
-                      height="32"
-                      decoding="async"
-                      data-nimg="1"
-                      className="inline-block w-8 h-8 transition-transform duration-200 ease-in-out rounded-full ring-2 ring-white hover:-translate-y-1 text-transparent z-[3]"
-                      // style="color:transparent;z-index:3"
-                      src="/images/sproutysocial-customer-3.webp"
-                    />
-                    <img
-                      alt="SproutySocial Customer Avatar 4"
-                      loading="eager"
-                      width="32"
-                      height="32"
-                      decoding="async"
-                      data-nimg="1"
-                      className="inline-block w-8 h-8 transition-transform duration-200 ease-in-out rounded-full ring-2 ring-white hover:-translate-y-1 text-transparent z-[4]"
-                      // style="color:transparent;z-index:4"
-                      src="/images/sproutysocial-customer-4.webp"
-                    />
-                    <span
-                      className="inline-flex items-center justify-center h-8 bg-gray-800 rounded-full w-9 ring-2 ring-white dark:bg-gray-900 dark:ring-gray-800 z-[5]"
-                      //  style="z-index:5"
-                    >
-                      <span className="text-xs font-medium leading-none text-white uppercase">
-                        58K+
-                      </span>
-                    </span>
-                  </div> */}
                   <AnimatedTooltipPreview />
                 </div>
 
