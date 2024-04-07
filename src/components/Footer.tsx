@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div className="max-w-[1280px] mx-auto px-6 font-dashboard">
-      <div className="grid md:grid-cols-3 auto-cols-auto xl:grid-cols-5 gap-4 text-[#374151]">
+      <div className="grid md:grid-cols-3 auto-cols-auto xl:grid-cols-5 gap-10 md:gap-4 text-[#374151]">
         <div className="flex flex-col gap-2">
           <img
             alt="SproutySocial logo text"
@@ -87,7 +87,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="my-8 flex flex-col gap-4 md:flex-row items-center justify-between w-full">
+      <div className="mt-6 py-8 flex flex-col gap-4 md:flex-row items-center justify-between w-full">
         <svg
           width="340"
           height="32"
