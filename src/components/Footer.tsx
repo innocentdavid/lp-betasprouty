@@ -87,7 +87,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="my-8 flex items-center justify-between w-full">
+      <div className="my-8 flex flex-col gap-4 md:flex-row items-center justify-between w-full">
         <svg
           width="340"
           height="32"
