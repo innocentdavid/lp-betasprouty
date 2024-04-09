@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { BentoGrid, BentoGridItem } from "../../components/ui/bento-grid";
 import { cn } from "../../utils/cn";
+import AnimatedCard from "../../components/animatedCard";
 
 export default function BentoGridCompt() {
   return (
-    <div className="my-16 md:my-40">
-      <div className="max-w-5xl mx-auto text-center mt-20 pb-4 px-4">
+    <div className="">
+      {/* <div className="max-w-5xl mx-auto text-center mt-20 pb-4 px-4">
         <div className="text-[28px] md:text-[32px] lg:text-[64px] lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto">
           Loved by
           <span className="bg-[#111111] bg-gradient-to-r from-[#65F571] to-[#01B9FF] text-transparent bg-clip-text ml-3">
@@ -16,7 +17,7 @@ export default function BentoGridCompt() {
           23,000+ creators and businesses have chosen Sprouty to grow their
           Instagram presence.
         </p>
-      </div>
+      </div> */}
 
       <BentoGridThirdDemo />
     </div>
@@ -70,7 +71,7 @@ const SkeletonOne = () => {
     <motion.div
       initial="initial"
       whileHover="animate"
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2 relative z-50"
     >
       <motion.div
         variants={variants}
@@ -96,45 +97,47 @@ const SkeletonOne = () => {
     </motion.div>
   );
 };
-const SkeletonTwo = () => {
-  const variants = {
-    initial: {
-      width: 0,
-    },
-    animate: {
-      width: "100%",
-      transition: {
-        duration: 0.2,
-      },
-    },
-    hover: {
-      width: ["0%", "100%"],
-      transition: {
-        duration: 2,
-      },
-    },
-  };
-  const arr = new Array(6).fill(0);
-  return (
-    <motion.div
-      initial="initial"
-      animate="animate"
-      whileHover="hover"
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
-    >
-      {arr.map((_, i) => (
-        <motion.div
-          key={"skelenton-two" + i}
-          variants={variants}
-          style={{
-            maxWidth: Math.random() * (100 - 40) + 40 + "%",
-          }}
-          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
-        ></motion.div>
-      ))}
-    </motion.div>
-  );
-};
+
+// const SkeletonTwo = () => {
+//   const variants = {
+//     initial: {
+//       width: 0,
+//     },
+//     animate: {
+//       width: "100%",
+//       transition: {
+//         duration: 0.2,
+//       },
+//     },
+//     hover: {
+//       width: ["0%", "100%"],
+//       transition: {
+//         duration: 2,
+//       },
+//     },
+//   };
+//   const arr = new Array(6).fill(0);
+//   return (
+//     <motion.div
+//       initial="initial"
+//       animate="animate"
+//       whileHover="hover"
+//       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
+//     >
+//       {arr.map((_, i) => (
+//         <motion.div
+//           key={"skelenton-two" + i}
+//           variants={variants}
+//           style={{
+//             maxWidth: Math.random() * (100 - 40) + 40 + "%",
+//           }}
+//           className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
+//         ></motion.div>
+//       ))}
+//     </motion.div>
+//   );
+// };
+
 const SkeletonThree = () => {
   const variants = {
     initial: {
@@ -323,14 +326,14 @@ const items = [
     icon: "",
   },
   {
-    title: "Automated Proofreading",
-    description: (
-      <span className="text-sm">
-        Let AI handle the proofreading of your documents.
-      </span>
-    ),
-    header: <SkeletonTwo />,
-    className: "md:col-span-1",
+    // title: "Automated Proofreading",
+    // description: (
+    //   <span className="text-sm">
+    //     Let AI handle the proofreading of your documents.
+    //   </span>
+    // ),
+    header: <AnimatedCard />,
+    className: "md:col-span-1 p-0",
     // icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
     icon: "",
   },
