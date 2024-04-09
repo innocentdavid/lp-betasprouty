@@ -56,7 +56,7 @@ export default function FAQ() {
       description:
         "SproutySocial offers a 7-day free trial period. Not only that, we are so confident in our service that we guarantee you a 7 days money back guarantee if you are not satisfied with our service.",
     },
-  ];  
+  ];
 
   return (
     <div className="mb-16 md:mb-40 max-w-[1280px] px-[15px] mx-auto">
@@ -106,13 +106,26 @@ const Accordion = ({ i, expanded, setExpanded, title, description }: any) => {
         {/* Add title here */}
         <div className="flex items-center justify-between gap-3 w-full ">
           {title}
+
+          <img
+            src="/icons/circle-arrow.png"
+            alt="circle-arrow"
+            className={`${
+              isOpen ? "rotate-90" : ""
+            } hidden lg:block transition-all duration-300 min-w-[32px] h-auto _h-[32px]`}
+            width={36}
+            height={36}
+          />
+
           <svg
             width="36"
             height="36"
             viewBox="0 0 36 36"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={`${isOpen ? "rotate-90" : ""} transition-all duration-300 min-w-[32px] h-[32px]`}
+            className={`${
+              isOpen ? "rotate-90" : ""
+            } lg:hidden transition-all duration-300 min-w-[32px] h-auto _h-[32px]`}
           >
             <circle
               cx="18"
