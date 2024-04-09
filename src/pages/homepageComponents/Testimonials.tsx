@@ -396,7 +396,7 @@ export default function Testimonials() {
   const [selectedCatg, setSelectedCatg] = useState("All");
 
   return (
-    <div className="my-16 md:my-40">
+    <div className="my-16 md:my-40 max-w-[1280px] mx-auto">
       <div className="max-w-5xl mx-auto text-center mt-20 pb-4 px-4">
         <div className="text-[28px] md:text-[32px] lg:text-[64px] lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto">
           Loved by
@@ -410,7 +410,7 @@ export default function Testimonials() {
         </p>
       </div>
 
-      <div className="mt-8 px-10">
+      <div className="mt-8 px-4 md:px-10">
         <div className="flex items-center gap-2 justify-center flex-wrap">
           <div
             className={`px-4 py-[8px] rounded-[32px] bg-[#0000000d] ${

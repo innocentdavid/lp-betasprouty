@@ -38,7 +38,7 @@ export default function Footer() {
                 <p className="">Instagram Growth Service</p>
                 <p className="">Instagram Real Followers</p>
                 <p className="">Instagram Real Engagement</p>
-                <p className="">Perks & Discounts — New</p>
+                <p className="">Perks & Discounts <span className="text-blue-500">— New</span></p>
             </div>
         </div>
         
@@ -52,8 +52,8 @@ export default function Footer() {
                 <p className="">Blog</p>
                 <p className="">Contact Us</p>
                 <p className="">Press Kit</p>
-                <p className="">Careers — We're hiring</p>
-                <p className="">Affiliate — Earn 25%</p>
+                <p className="">Careers <span className="text-blue-500">— We're hiring</span></p>
+                <p className="">Affiliate <span className="text-blue-500">— Earn 25%</span></p>
             </div>
         </div>
         
@@ -78,8 +78,7 @@ export default function Footer() {
 
             <div className="flex flex-col gap-4">
                 <p className="">Real-Time Instagram</p>
-                <p className="">Post Preview</p>
-                <p className="">— Coming Soon</p>
+                <p className="">Post Preview <span className="text-blue-500">— Coming Soon</span></p>
                 <p className="">Fake Followers Checker on Instagram</p>
                 <p className="">Instagram Profile Report</p>
                 <p className="">Instagram Caption Generator</p>

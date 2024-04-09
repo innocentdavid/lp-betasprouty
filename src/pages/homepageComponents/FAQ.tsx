@@ -9,64 +9,54 @@ export default function FAQ() {
     {
       title: "How quickly will my followers grow?",
       description:
-        "Read Jason's Blog by going to this url - https://medium.com/@akbar123jason/creating-animated-faq-accordion-with-framer-motion-in-react-568bf100670e ",
+        "Follower growth typically ranges between 1,000 to 2,000 monthly, with our best-performing clients seeing up to 10,000 new followers.",
     },
     {
       title: "How long does it take to see first results?",
       description:
-        "Read Jason's Blog by going to this url - https://medium.com/@akbar123jason/creating-animated-faq-accordion-with-framer-motion-in-react-568bf100670e ",
+        "You can expect to see initial results within the first few days of using our service, with interactions typically starting within 24 hours. Over time, you'll experience significant growth as your account continues to engage with your target audience.",
     },
     {
       title: "Will SproutySocial work for my industry or niche?",
       description:
-        "Read Jason's Blog by going to this url - https://medium.com/@akbar123jason/creating-animated-faq-accordion-with-framer-motion-in-react-568bf100670e ",
+        "SproutySocial is designed to work across various industries and niches. Our tailored approach ensures that your account receives targeted growth specific to your niche.",
     },
     {
-      title: "Will my Instagram account be safe?",
+      title: "Is my account safe with your service?",
       description:
-        "Read Jason's Blog by going to this url - https://medium.com/@akbar123jason/creating-animated-faq-accordion-with-framer-motion-in-react-568bf100670e ",
+        "Yes, your Instagram account is safe with us. We prioritize security and compliance with Instagram's terms of service to ensure the safety and integrity of your account.",
     },
     {
-      title: "Are the followers  I receive real users?",
+      title: "Are the followers I receive real users?",
       description:
-        "Read Jason's Blog by going to this url - https://medium.com/@akbar123jason/creating-animated-faq-accordion-with-framer-motion-in-react-568bf100670e ",
+        "Absolutely, all the followers you receive through our service are real, active users who are genuinely interested in your content and niche.",
     },
     {
-      title: "Is my account safe with SproutySocial?",
+      title: "How can I maximize growth further?",
       description:
-        "Read Jason's Blog by going to this url - https://medium.com/@akbar123jason/creating-animated-faq-accordion-with-framer-motion-in-react-568bf100670e ",
-    },
-    {
-      title: "How can I maximise growth even further?",
-      description:
-        "Read Jason's Blog by going to this url - https://medium.com/@akbar123jason/creating-animated-faq-accordion-with-framer-motion-in-react-568bf100670e ",
+        "To maximize your growth further, we recommend reaching out to your dedicated account manager. They can provide personalized strategies and insights to help you achieve your growth goals effectively.",
     },
     {
       title: "Does SproutySocial offer a free trial?",
       description:
-        "Read Jason's Blog by going to this url - https://medium.com/@akbar123jason/creating-animated-faq-accordion-with-framer-motion-in-react-568bf100670e ",
+        "Yes, we offer a 7-day risk-free trial to help you experience the benefits of our service firsthand and decide if SproutySocial aligns with your goals.",
     },
     {
-      title: "Will I lose followers if I cancel my subscription?",
+      title: "Will I lose followers if I cancel the subscription?",
       description:
-        "Read Jason's Blog by going to this url - https://medium.com/@akbar123jason/creating-animated-faq-accordion-with-framer-motion-in-react-568bf100670e ",
-    },
-    {
-      title: "Will I lose followers if I cancel my subscription?",
-      description:
-        "Read Jason's Blog by going to this url - https://medium.com/@akbar123jason/creating-animated-faq-accordion-with-framer-motion-in-react-568bf100670e ",
+        "No, you won't lose any followers if you decide to cancel your subscription. The followers you've gained through our service are real users who are not affiliated with us, ensuring that they remain yours to keep.",
     },
     {
       title: "Is SproutySocial secure?",
       description:
-        "Read Jason's Blog by going to this url - https://medium.com/@akbar123jason/creating-animated-faq-accordion-with-framer-motion-in-react-568bf100670e ",
+        "Yes, SproutySocial prioritizes the security of your account, there are many measures in place to protect your data and ensure a safe experience on our platform. You can trust that your information is safeguarded against unauthorized access or misuse.",
     },
     {
       title: "Do you have a refund policy?",
       description:
-        "Read Jason's Blog by going to this url - https://medium.com/@akbar123jason/creating-animated-faq-accordion-with-framer-motion-in-react-568bf100670e ",
+        "SproutySocial offers a 7-day free trial period. Not only that, we are so confident in our service that we guarantee you a 7 days money back guarantee if you are not satisfied with our service.",
     },
-  ];
+  ];  
 
   return (
     <div className="mb-16 md:mb-40 max-w-[1280px] px-[15px] mx-auto">

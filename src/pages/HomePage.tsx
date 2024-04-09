@@ -7,6 +7,8 @@ import FAQ from "./homepageComponents/FAQ";
 import Testimonials from "./homepageComponents/Testimonials";
 import Footer from "../components/Footer";
 import BentoGridCompt from "./homepageComponents/BentoGrid";
+import Pricing from "./homepageComponents/Pricing";
+import CTA from "./homepageComponents/CTA";
 
 export default function HomePage() {
   return (
@@ -23,7 +25,11 @@ export default function HomePage() {
 
       <DashPreview />
 
+      <Pricing />
+
       <FAQ />
+
+      <CTA />
 
       <Footer />
     </>

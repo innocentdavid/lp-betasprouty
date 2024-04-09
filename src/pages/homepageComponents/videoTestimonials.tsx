@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useRef, useState } from "react";
-import { FaArrowLeft, FaArrowRight, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import Vimeo from "@u-wave/react-vimeo";
+import { motion } from "framer-motion";
 
 const VIDEO_TESTIMONIALS = [
   {
@@ -38,7 +39,7 @@ export default function VideoTestimonials() {
 
       console.log("slider.scrollLeft");
       console.log(slider.scrollLeft);
-      
+
       if (scrollOffset === +280) {
         if (slider.scrollLeft >= 521) {
           setScrollPosition(1);
@@ -98,13 +99,15 @@ export default function VideoTestimonials() {
         </p>
       </div>
 
-      <div
-        className="flex xl:justify-center gap-4 px-3 md:px-12 mt-8 w-full overflow-x-auto no-scrollbar"
+      <motion.div
+      layout
+        className="flex xl:justify-center gap-4 px-3 md:px-12 mt-8 w-full overflow-x-auto no-scrollbar min-w-[375px] max-w-[375px] md:min-w-[unset] md:max-w-[unset]"
         ref={sliderRef}
       >
         {VIDEO_TESTIMONIALS.map((Vtestimonial, index) => {
           return (
-            <div
+            <motion.div
+            layout
               key={`V_testimonial-${index + 1}`}
               className="relative min-h-[568px] _bg-[url(/images/vt-1.png)] bg-cover bg-center bg-no-repeat rounded-md min-w-[280px] md:min-w-[320px] lg:max-w-[500px]"
               style={{
@@ -143,10 +146,10 @@ export default function VideoTestimonials() {
                   <div className="">{Vtestimonial.fullName}</div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           );
         })}
-      </div>
+      </motion.div>
 
       <div className="lg:hidden flex justify-between items-center px-3 py-4">
         <div className="md:hidden flex items-center gap-2">
@@ -172,22 +175,111 @@ export default function VideoTestimonials() {
         {/* {scrollPosition} */}
 
         <div className="flex items-center gap-2">
-          <div
-            className="w-8 h-8 rounded-full border border-black hover:bg-black hover:text-white grid place-items-center cursor-pointer"
+          <svg
+            className={`transition-all duration-300 min-w-8 h-8 rotate-180`}
             onClick={() => {
               scroll(-280);
             }}
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <FaArrowLeft size={10} />
-          </div>
-          <div
-            className="w-8 h-8 rounded-full border border-black hover:bg-black hover:text-white grid place-items-center cursor-pointer"
+            <circle
+              cx="18"
+              cy="18"
+              r="16"
+              transform="rotate(-90 18 18)"
+              stroke="url(#paint0_linear_63_275)"
+              stroke-width="2.06452"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.3938 16.8645C10.7667 16.8645 10.2583 17.3729 10.2583 18C10.2583 18.6271 10.7667 19.1355 11.3938 19.1355L22.3598 19.1355L18.2036 24.3307C17.8119 24.8204 17.8913 25.5349 18.3809 25.9267C18.8706 26.3184 19.5852 26.239 19.9769 25.7493L25.6089 18.7093C25.9407 18.2946 25.9407 17.7054 25.6089 17.2907L19.9769 10.2507C19.5852 9.76099 18.8706 9.68159 18.3809 10.0733C17.8913 10.4651 17.8119 11.1797 18.2036 11.6693L22.3598 16.8645L11.3938 16.8645Z"
+              fill="url(#paint1_linear_63_275)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_63_275"
+                x1="2.96"
+                y1="18"
+                x2="34"
+                y2="18"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#F90D1E" />
+                <stop offset="0.677083" stop-color="#BA01B4" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_63_275"
+                x1="18.058"
+                y1="25.685"
+                x2="18.058"
+                y2="9.82449"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#F90D1E" />
+                <stop offset="0.677083" stop-color="#BA01B4" />
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <svg
+            className={`transition-all duration-300 min-w-8 h-8`}
             onClick={() => {
               scroll(280);
             }}
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <FaArrowRight size={10} />
-          </div>
+            <circle
+              cx="18"
+              cy="18"
+              r="16"
+              transform="rotate(-90 18 18)"
+              stroke="url(#paint0_linear_63_275)"
+              stroke-width="2.06452"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.3938 16.8645C10.7667 16.8645 10.2583 17.3729 10.2583 18C10.2583 18.6271 10.7667 19.1355 11.3938 19.1355L22.3598 19.1355L18.2036 24.3307C17.8119 24.8204 17.8913 25.5349 18.3809 25.9267C18.8706 26.3184 19.5852 26.239 19.9769 25.7493L25.6089 18.7093C25.9407 18.2946 25.9407 17.7054 25.6089 17.2907L19.9769 10.2507C19.5852 9.76099 18.8706 9.68159 18.3809 10.0733C17.8913 10.4651 17.8119 11.1797 18.2036 11.6693L22.3598 16.8645L11.3938 16.8645Z"
+              fill="url(#paint1_linear_63_275)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_63_275"
+                x1="2.96"
+                y1="18"
+                x2="34"
+                y2="18"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#F90D1E" />
+                <stop offset="0.677083" stop-color="#BA01B4" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_63_275"
+                x1="18.058"
+                y1="25.685"
+                x2="18.058"
+                y2="9.82449"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#F90D1E" />
+                <stop offset="0.677083" stop-color="#BA01B4" />
+              </linearGradient>
+            </defs>
+          </svg>
         </div>
       </div>
     </div>
