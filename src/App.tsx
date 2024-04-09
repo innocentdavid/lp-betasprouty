@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router";
 import "./styles/App.css";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           {/* <Route path='/bet' element={<Bet />} /> */}
           {/* <Route path="/harybet" element={<HaryBet />} /> */}
           {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
