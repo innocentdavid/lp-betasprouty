@@ -16,7 +16,7 @@ const pricingFeatures = [
 
 export default function Pricing() {
   return (
-    <div className="max-w-[1280px] mx-auto px-4 md:px-10 pb-[80px] md:pb-[150px]">
+    <div className="max-w-[1280px] mx-auto px-4 md:px-10 pb-[80px] md:pb-[150px]" id="pricing">
       <div className="max-w-5xl mx-auto text-center pb-4 px-4">
         <div className="text-[28px] md:text-[32px] lg:text-[64px] lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto mb-8">
           Start your 7-day <br />

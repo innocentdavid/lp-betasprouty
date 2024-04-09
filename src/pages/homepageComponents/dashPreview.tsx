@@ -100,7 +100,7 @@ export default function DashPreview() {
 
   return (
     <header
-      id="apps"
+      id="instagram-growth"
       // name="Apps"
       className="my-16 md:my-40 flex flex-col items-center justify-center gap-20 min-h-[min-content] bg-gradient-to-b from-rose-500 to-orange-400 py-10 md:py-40 px-150 relative overflow-hidden w-full"
     >

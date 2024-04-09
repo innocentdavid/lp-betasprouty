@@ -4,7 +4,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="navbar-section absolute top-0 left-0 w-full z-[99]">
+    <header className="navbar-section absolute top-0 left-0 w-full z-[99] text-white">
       <nav className="bg-transparent bg-opacity-90 backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8 relative z-50 flex justify-between py-5">
           <div className="relative z-10 flex items-center gap-16">
@@ -31,26 +31,26 @@ export default function Navbar() {
             <div className="hidden lg:flex lg:gap-10">
               <div className="flex items-center gap-10">
                 <a
-                  className="inline-flex items-center px-3 py-2 text-base font-medium text-gray-600 transition-colors duration-100 group hover:no-underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-gray-100 rounded-xl whitespace-nowrap"
-                  href="/"
+                  className="inline-flex items-center px-3 py-2 text-base font-medium _text-gray-600 transition-colors duration-100 group hover:no-underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-gray-100 rounded-xl whitespace-nowrap"
+                  href="/#instagram-growth"
                 >
                   Instagram Growth
                 </a>
                 <a
-                  className="inline-flex items-center px-3 py-2 text-base font-medium text-gray-600 transition-colors duration-100 group hover:no-underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-gray-100 rounded-xl whitespace-nowrap"
-                  href="/pricing"
+                  className="inline-flex items-center px-3 py-2 text-base font-medium _text-gray-600 transition-colors duration-100 group hover:no-underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-gray-100 rounded-xl whitespace-nowrap"
+                  href="/#pricing"
                 >
                   Pricing
                 </a>
                 <a
-                  className="inline-flex items-center px-3 py-2 text-base font-medium text-gray-600 transition-colors duration-100 group hover:no-underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-gray-100 rounded-xl whitespace-nowrap"
-                  href="/reviews"
+                  className="inline-flex items-center px-3 py-2 text-base font-medium _text-gray-600 transition-colors duration-100 group hover:no-underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-gray-100 rounded-xl whitespace-nowrap"
+                  href="/#reviews"
                 >
                   Reviews
                 </a>
                 <a
-                  className="inline-flex items-center px-3 py-2 text-base font-medium text-gray-600 transition-colors duration-100 group hover:no-underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-gray-100 rounded-xl whitespace-nowrap"
-                  href="/faq"
+                  className="inline-flex items-center px-3 py-2 text-base font-medium _text-gray-600 transition-colors duration-100 group hover:no-underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-gray-100 rounded-xl whitespace-nowrap"
+                  href="/#faq"
                 >
                   FAQ
                 </a>
@@ -195,7 +195,7 @@ export default function Navbar() {
             {/* mobile menu */}
 
             <a
-              className="hidden lg:inline-flex items-center px-3 py-2 text-base font-medium text-gray-600 transition-colors duration-100 group hover:no-underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-gray-100 rounded-xl whitespace-nowrap"
+              className="hidden lg:inline-flex items-center px-3 py-2 text-base font-medium _text-gray-600 transition-colors duration-100 group hover:no-underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-gray-100 rounded-xl whitespace-nowrap"
               href="https://app.sproutysocial.com/login"
             >
               Log in

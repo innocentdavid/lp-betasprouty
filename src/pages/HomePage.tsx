@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { AuroraBackground } from "../components/ui/aurora-background";
+// import { AuroraBackground } from "../components/ui/aurora-background";
 import { AnimatedTooltip } from "../components/ui/animated-tooltip";
 import VideoTestimonials from "./homepageComponents/videoTestimonials";
 import DashPreview from "./homepageComponents/dashPreview";
@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import BentoGridCompt from "./homepageComponents/BentoGrid";
 import Pricing from "./homepageComponents/Pricing";
 import CTA from "./homepageComponents/CTA";
+import { SparklesPreview } from "../components/ui/sparkles-2-bg";
 // import AnimatedCard from "../components/animatedCard";
 
 export default function HomePage() {
@@ -42,7 +43,8 @@ export default function HomePage() {
 function Hero() {
   return (
     <div className="">
-      <AuroraBackground>
+      {/* <AuroraBackground> */}
+      <SparklesPreview>
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -51,10 +53,10 @@ function Hero() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="relative flex flex-col gap-4 items-center justify-center px-4 pt-20 mb-6"
+          className="relative flex flex-col gap-4 items-center justify-center px-4 pt-20 text-white"
         >
           <div className="max-w-5xl mx-auto text-center">
-            <h1 className="group hero-h1-gradient _text-left sm:text-center whitespace-pre-wrap bg-clip-text text-transparent bg-gray-900 text-5xl _font-bold tracking-[-1.5px] sm:tracking-[-2px] text-gray-900 sm:text-[45px] md:text-[50px] lg:text-[61px] leading-[39px] sm:leading-[65px] font-dashboard">
+            <h1 className="group hero-h1-gradient _text-left sm:text-center whitespace-pre-wrap bg-clip-text text-transparent bg-gray-900 text-5xl _font-bold tracking-[-1.5px] sm:tracking-[-2px] _text-gray-900 sm:text-[45px] md:text-[50px] lg:text-[61px] leading-[39px] sm:leading-[65px] font-dashboard text-white">
               <span className="mr-2 sm:mr-0 font-black text-[34px] md:text-[48px] lg:text-[84px] lg:leading-[90px]">
                 Grow your Instagram
               </span>
@@ -63,7 +65,7 @@ function Hero() {
                 With Real Followers
               </span>
             </h1>
-            <p className="mt-4 mb-2 sm:mb-0 sm:mt-6 sm:text-[21px] text-xl font-medium sm:leading-[32px] leading-snug text-gray-600 _text-left sm:text-center">
+            <p className="mt-4 mb-2 sm:mb-0 sm:mt-6 sm:text-[21px] text-xl font-medium sm:leading-[32px] leading-snug _text-gray-600 _text-left sm:text-center">
               Get 1000+ real followers every month
               <br className="hidden sm:block" /> Make your posts go viral
               organically
@@ -325,8 +327,9 @@ function Hero() {
             </div>
           </div>
         </motion.div>
-      </AuroraBackground>
-      
+      </SparklesPreview>
+      {/* </AuroraBackground> */}
+
       <BentoGridCompt />
     </div>
   );

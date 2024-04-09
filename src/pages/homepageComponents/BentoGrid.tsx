@@ -5,7 +5,7 @@ import AnimatedCard from "../../components/animatedCard";
 
 export default function BentoGridCompt() {
   return (
-    <div className="">
+    <div className="mt-4">
       {/* <div className="max-w-5xl mx-auto text-center mt-20 pb-4 px-4">
         <div className="text-[28px] md:text-[32px] lg:text-[64px] lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto">
           Loved by

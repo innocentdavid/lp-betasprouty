@@ -59,7 +59,7 @@ export default function FAQ() {
   ];
 
   return (
-    <div className="mb-16 md:mb-40 max-w-[1280px] px-[15px] mx-auto">
+    <div className="mb-16 md:mb-40 max-w-[1280px] px-[15px] mx-auto" id="faq">
       <div className="max-w-[50rem] mx-auto">
         <div className="max-w-5xl mx-auto text-center mt-20 pb-4 px-4">
           <div className="text-[28px] md:text-[32px] lg:text-[64px] lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto mb-8">
