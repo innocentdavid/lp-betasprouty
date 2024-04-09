@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import BentoGridCompt from "./homepageComponents/BentoGrid";
 import Pricing from "./homepageComponents/Pricing";
 import CTA from "./homepageComponents/CTA";
+import AnimatedCardV2 from "../components/animatedCardV2";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,8 @@ export default function HomePage() {
       <div className="">
         <Hero />
       </div>
+
+      <AnimatedCardV2 />
 
       <BentoGridCompt />
 

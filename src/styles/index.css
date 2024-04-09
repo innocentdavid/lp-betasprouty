@@ -121,3 +121,7 @@ li button {
   cursor: pointer;
   flex-shrink: 0;
 }
+
+.test-shadow {
+  box-shadow: rgba(36, 42, 66, 0.08) 0px 20px 70px -10px, rgba(36, 42, 66, 0.04) 0px 10px 24px -8px,rgba(36, 42, 66, 0.06) 0px 1px 4px -1px;
+}
