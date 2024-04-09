@@ -16,15 +16,18 @@ const pricingFeatures = [
 
 export default function Pricing() {
   return (
-    <div className="max-w-[1280px] mx-auto px-4 md:px-10 pb-[80px] md:pb-[150px]" id="pricing">
+    <div
+      className="max-w-[1280px] mx-auto px-4 md:px-10 pb-[80px] md:pb-[150px]"
+      id="pricing"
+    >
       <div className="max-w-5xl mx-auto text-center pb-4 px-4">
-        <div className="text-[28px] md:text-[32px] lg:text-[64px] lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto mb-8">
-          Start your 7-day <br />
+        <div className="text-[30px] md:text-[32px] lg:text-[48px] leading-8 lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto">
+          <span>Start your 7-day</span>{" "}
           <span className="bg-[#111111] bg-gradient-to-r from-[#65F571] to-[#01B9FF] text-transparent bg-clip-text">
             free trial
           </span>
         </div>
-        <p className="mt-4 mb-2 sm:mb-0 sm:mt-6 sm:text-[21px] text-xl font-medium sm:leading-[32px] leading-snug text-gray-600 _text-left sm:text-center font-dashboard">
+        <p className="mt-2 mb-2 sm:mb-0 sm:mt-2 sm:text-[21px] text-xl font-medium sm:leading-[32px] leading-snug text-gray-600 _text-left sm:text-center font-dashboard">
           No bots or fake followers. It’s that simple.
         </p>
       </div>
@@ -80,7 +83,9 @@ export default function Pricing() {
               <div className="bg-[#111111] bg-gradient-to-r from-[#07DEFF] to-[#0F97FF] bg-clip-text text-transparent font-medium text-[36px] md:text-[48px]">
                 $24.99
               </div>
-              <div className="text-gray-500 -mb-6 text-xs md:text-base">/week, billed monthly</div>
+              <div className="text-gray-500 -mb-6 text-xs md:text-base">
+                /week, billed monthly
+              </div>
             </div>
 
             <div className="font-medium text-[18px] md:text-[20px]">
@@ -131,9 +136,9 @@ export default function Pricing() {
           </div>
 
           <div className="flex flex-col items-center justify-center w-full">
-            <div className="items-center justify-center inline-block w-full gap-x-6 sm:flex">
+            <div className="items-center justify-center w-full gap-x-6 flex">
               <a
-                className="mb-4 sm:w-auto sm:mb-0 glow-button group inline-block shadow-md transition-transform duration-200 hover:scale-[.98] h-[54px] w-fit rounded-xl"
+                className="sm:w-auto sm:mb-0 glow-button group inline-block shadow-md transition-transform duration-200 hover:scale-[.98] h-[54px] w-fit rounded-xl"
                 href="https://app.sproutysocial.com/signup"
               >
                 <div
@@ -184,7 +189,7 @@ export default function Pricing() {
               </a>
             </div>
 
-            <p className="mt-4">Cancel anytime, no risk</p>
+            <p className="mt-1">Cancel anytime, no risk</p>
           </div>
         </div>
       </div>

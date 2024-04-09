@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion"
 
 const InstagramIcon = () => {
   return (
@@ -394,17 +395,18 @@ const TESTIMONIALS = [
 
 export default function Testimonials() {
   const [selectedCatg, setSelectedCatg] = useState("All");
+  const [showMore, setShowMore] = useState(false);
 
   return (
     <div className="my-16 md:my-40 max-w-[1280px] mx-auto" id="reviews">
       <div className="max-w-5xl mx-auto text-center mt-20 pb-4 px-4">
-        <div className="text-[28px] md:text-[32px] lg:text-[64px] lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto">
+        <div className="text-[30px] md:text-[32px] lg:text-[48px] leading-8 lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto _mb-8">
           Loved by
           <span className="bg-[#111111] bg-gradient-to-r from-[#65F571] to-[#01B9FF] text-transparent bg-clip-text ml-3">
             creators
           </span>
         </div>
-        <p className="mb-2 sm:mb-0 sm:mt-6 sm:text-[21px] text-xl font-medium sm:leading-[32px] leading-snug text-gray-600 _text-left sm:text-center font-dashboard max-w-[700px] mx-auto">
+        <p className="mb-2 sm:mb-0 _sm:mt-6 sm:text-[21px] text-xl font-medium sm:leading-[32px] leading-snug text-gray-600 _text-left sm:text-center font-dashboard max-w-[700px] mx-auto">
           23,000+ creators and businesses have chosen Sprouty to grow their
           Instagram presence.
         </p>
@@ -464,7 +466,13 @@ export default function Testimonials() {
           </div>
         </div>
 
-        <div className="mt-8 masonry sm:masonry-sm md:masonry-md gap-4">
+        <motion.div
+          className={`mt-8 masonry sm:masonry-sm md:masonry-md gap-4 ${
+            !showMore && "max-h-[1200px] overflow-hidden"
+          } relative`}
+        >
+          {!showMore && <div className="absolute bottom-0 left-0 w-full min-h-[200px] _bg-white/70 bg-gradient-to-t from-[#F9F9FA] to-white/70"></div>}
+
           {TESTIMONIALS.filter((item) => {
             if (selectedCatg === "All") {
               return true;
@@ -507,17 +515,18 @@ export default function Testimonials() {
                 </div>
 
                 {testimonial.description}
-                {/* <p className="">
-                  If you're a model, and you'd like to grow your Instagram
-                  followers quickly, check out{" "}
-                  <span className="bg-purple-500 bg-gradient-to-r from-[#BA01B4] to-[#3D1DC2] text-transparent bg-clip-text">
-                    @SproutySocial
-                  </span>{" "}
-                  Great, reliable and easy to use! never looking back 🙌
-                </p> */}
               </div>
             );
           })}
+        </motion.div>
+
+        <div className="flex items-center justify-center">
+          <div
+            className="rounded-[12px] border shadow-lg py-2 w-full max-w-[150px] text-center bg-white cursor-pointer font-semibold font-dashboard"
+            onClick={() => setShowMore(!showMore)}
+          >
+            {showMore ? "Show more" : "Show less"}
+          </div>
         </div>
       </div>
     </div>

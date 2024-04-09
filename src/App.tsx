@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="bg-[#F9F9FA] text-black">
       <Navbar />
+      
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />

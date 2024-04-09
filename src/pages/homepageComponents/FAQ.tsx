@@ -62,8 +62,8 @@ export default function FAQ() {
     <div className="mb-16 md:mb-40 max-w-[1280px] px-[15px] mx-auto" id="faq">
       <div className="max-w-[50rem] mx-auto">
         <div className="max-w-5xl mx-auto text-center mt-20 pb-4 px-4">
-          <div className="text-[28px] md:text-[32px] lg:text-[64px] lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto mb-8">
-            Frequently asked <br />
+          <div className="text-[30px] md:text-[32px] lg:text-[48px] leading-8 lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto mb-8">
+            <span>Frequently asked</span>{" "}
             <span className="bg-[#111111] bg-gradient-to-r from-[#FED33B] to-[#FA3324] text-transparent bg-clip-text">
               questions
             </span>

@@ -10,7 +10,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const allIngredients = [
   {
     icon: "🍅",
-    label: "Live Analytics",
+    label: "Analytics",
     image: "/images/dashPrev/Live Analytics.png",
   },
   { icon: "🥬", label: "Growth", image: "/images/dashPrev/Growth.png" },
@@ -107,7 +107,7 @@ export default function DashPreview() {
       {/* Background */}
       <div
         // name="Background"
-        className="select-none absolute top-0 left-0 w-full h-full overflow-hidden z-0 bg-gradient-to-t from-rose-500 to-orange-400 mix-blend-overlay flex-none"
+        className="select-none pointer-events-none absolute top-0 left-0 w-full h-full overflow-hidden z-0 bg-gradient-to-t from-rose-500 to-orange-400 mix-blend-overlay flex-none"
       >
         <div
           // name="Shapes container"
@@ -189,17 +189,17 @@ export default function DashPreview() {
       </div>
 
       <div className="flex flex-col items-center gap-[64px] flex-nowrap h-[min-content] justify-center overflow-visible relative w-[min-content]">
-        <div className="md:max-w-5xl md:mx-auto text-center pb-4 px-4 md:px-10">
-          <div className="text-[28px] md:text-[32px] lg:text-[64px] lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto mb-8 text-white">
+        <div className="md:max-w-5xl md:mx-auto text-center pb-4 px-4 md:px-10 font-dashboard">
+          <div className="text-[30px] md:text-[32px] lg:text-5xl leading-8 font-dashboard text-center font-bold max-w-[940px] mx-auto _mb-8 text-white">
             Our magic formula for Instagram Growth
           </div>
-          <p className="mt-4 mb-2 sm:mb-0 sm:mt-6 sm:text-[21px] text-xl font-medium sm:leading-[32px] leading-snug text-white _text-left sm:text-center">
+          <p className="mt-4 mb-2 sm:mb-0 _sm:mt-6 sm:text-[21px] text-xl font-medium sm:leading-[32px] leading-snug text-white _text-left sm:text-center">
             Loaded with new features to quickly get genuine users to your Instagram.
           </p>
         </div>
 
         <div className="md:min-w-[480px] overflow-hidden flex flex-col gap-[64px]">
-          <nav className="p-[5px_5px_0] h-[44px] md:max-w-[600px] mx-auto w-full">
+          <nav className="p-[5px_5px_0] h-[44px] md:max-w-[600px] mx-auto w-full font-dashboard">
             <ul className="list-none p-0 m-0 font-[500] text-sm flex w-full border-b border-white pb-[12px]">
               {tabs.map((item) => (
                 <li

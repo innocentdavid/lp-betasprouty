@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div className="max-w-[1280px] mx-auto px-6 font-dashboard">
-      <div className="grid md:grid-cols-3 auto-cols-auto xl:grid-cols-5 gap-10 md:gap-4 text-[#374151]">
+      <div className="flex flex-col md:flex-row gap-10 md:gap-4 text-[#374151]">
         <div className="flex flex-col gap-2">
           <img
             alt="SproutySocial logo text"
@@ -31,58 +31,77 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="">
-            <div className="mb-[20px] text-[#111827] font-bold uppercase">PRODUCT</div>
+        <div className="grid grid-cols-2 md:grid-cols-3 auto-cols-auto xl:grid-cols-5 gap-10 md:gap-4 w-full">
+          <div className="">
+            <div className="mb-[20px] text-[#111827] font-bold uppercase">
+              PRODUCT
+            </div>
 
             <div className="flex flex-col gap-4">
-                <p className="">Instagram Growth Service</p>
-                <p className="">Instagram Real Followers</p>
-                <p className="">Instagram Real Engagement</p>
-                <p className="">Perks & Discounts <span className="text-blue-500">— New</span></p>
+              <p className="">Instagram Growth Service</p>
+              <p className="">Instagram Real Followers</p>
+              <p className="">Instagram Real Engagement</p>
+              <p className="">
+                Perks & Discounts <span className="text-blue-500">— New</span>
+              </p>
             </div>
-        </div>
-        
-        <div className="">
-            <div className="mb-[20px] text-[#111827] font-bold uppercase">Resources</div>
+          </div>
+
+          <div className="">
+            <div className="mb-[20px] text-[#111827] font-bold uppercase">
+              Resources
+            </div>
 
             <div className="flex flex-col gap-4">
-                <p className="">Pricing</p>
-                <p className="">Video Reviews</p>
-                <p className="">Text Reviews</p>
-                <p className="">Blog</p>
-                <p className="">Contact Us</p>
-                <p className="">Press Kit</p>
-                <p className="">Careers <span className="text-blue-500">— We're hiring</span></p>
-                <p className="">Affiliate <span className="text-blue-500">— Earn 25%</span></p>
+              <p className="">Pricing</p>
+              <p className="">Video Reviews</p>
+              <p className="">Text Reviews</p>
+              <p className="">Blog</p>
+              <p className="">Contact Us</p>
+              <p className="">Press Kit</p>
+              <p className="">
+                Careers <span className="text-blue-500">— We're hiring</span>
+              </p>
+              <p className="">
+                Affiliate <span className="text-blue-500">— Earn 25%</span>
+              </p>
             </div>
-        </div>
-        
-        <div className="">
-            <div className="mb-[20px] text-[#111827] font-bold uppercase">Compare</div>
+          </div>
+
+          <div className="">
+            <div className="mb-[20px] text-[#111827] font-bold uppercase">
+              Compare
+            </div>
 
             <div className="flex flex-col gap-4">
-                <p className="">Upgrow Alternative</p>
-                <p className="">Plixi Alternative</p>
-                <p className="">Kicksta Alternative</p>
-                <p className="">SocialFollow Alternative</p>
-                <p className="">Buffer Alternative</p>
-                <p className="">Path Social Alternative</p>
-                <p className="">Nitreo Alternative</p>
-                <p className="">SocialBoost Alternative</p>
-                <p className="">View all comparisons</p>
+              <p className="">Upgrow Alternative</p>
+              <p className="">Plixi Alternative</p>
+              <p className="">Kicksta Alternative</p>
+              <p className="">SocialFollow Alternative</p>
+              <p className="">Buffer Alternative</p>
+              <p className="">Path Social Alternative</p>
+              <p className="">Nitreo Alternative</p>
+              <p className="">SocialBoost Alternative</p>
+              <p className="">View all comparisons</p>
             </div>
-        </div>
-        
-        <div className="">
-            <div className="mb-[20px] text-[#111827] font-bold uppercase">Tools</div>
+          </div>
+
+          <div className="">
+            <div className="mb-[20px] text-[#111827] font-bold uppercase">
+              Tools
+            </div>
 
             <div className="flex flex-col gap-4">
-                <p className="">Real-Time Instagram</p>
-                <p className="">Post Preview <span className="text-blue-500">— Coming Soon</span></p>
-                <p className="">Fake Followers Checker on Instagram</p>
-                <p className="">Instagram Profile Report</p>
-                <p className="">Instagram Caption Generator</p>
+              <p className="">Real-Time Instagram</p>
+              <p className="">
+                Post Preview{" "}
+                <span className="text-blue-500">— Coming Soon</span>
+              </p>
+              <p className="">Fake Followers Checker on Instagram</p>
+              <p className="">Instagram Profile Report</p>
+              <p className="">Instagram Caption Generator</p>
             </div>
+          </div>
         </div>
       </div>
 

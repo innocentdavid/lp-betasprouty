@@ -23,11 +23,11 @@ export default function HomePage() {
 
       {/* <BentoGridCompt /> */}
 
-      <Testimonials />
-
       <VideoTestimonials />
 
       <DashPreview />
+
+      <Testimonials />
 
       <Pricing />
 

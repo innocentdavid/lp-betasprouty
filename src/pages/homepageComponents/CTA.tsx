@@ -2,7 +2,7 @@ export default function CTA() {
   return (
     <div className="max-w-[1280px] mx-auto px-4 md:px-10 pb-[80px] md:pb-[150px] font-dashboard">
       <div className="rounded-[24px] bg-black bg-gradient-to-tr from-[#FF8A4C] to-[#E74694] lg:flex justify-between text-white">
-        <div className="flex-[5] p-4 md:p-8">
+        <div className="flex-[5] p-4 md:p-8 pt-8">
           <div className="flex items-center gap-2">
             <svg
               width="100"
@@ -34,7 +34,7 @@ export default function CTA() {
             </svg>
             <span className="text-xs">4.9/5 - based on 350+ reviews</span>
           </div>
-          <div className="mt-3 font-bold text-[28px] md:text-[36px]">
+          <div className="mt-3 font-bold text-[30px] md:text-4xl lg:text-5xl">
             <div className="">Get Real & Targeted Followers</div>
             <div className="text-black">Start for free today.</div>
           </div>
@@ -51,8 +51,8 @@ export default function CTA() {
           </button>
         </div>
 
-        <div className="hidden lg:block flex-[3] relative">
-            <img src="/images/cta-img.png" alt="cta-img" width={536} height={339} className="absolute bottom-0 right-0" />
+        <div className="flex-[3] relative min-h-[240px] md:min-h-[450px]">
+            <img src="/images/cta-img.png" alt="cta-img" width={536} height={339} className="absolute bottom-0 right-0 w-[calc(100%-30px)] " />
         </div>
       </div>
     </div>

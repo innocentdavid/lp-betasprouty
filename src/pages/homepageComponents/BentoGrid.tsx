@@ -7,7 +7,7 @@ export default function BentoGridCompt() {
   return (
     <div className="mt-4">
       {/* <div className="max-w-5xl mx-auto text-center mt-20 pb-4 px-4">
-        <div className="text-[28px] md:text-[32px] lg:text-[64px] lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto">
+        <div className="text-[30px] md:text-[32px] lg:text-[48px] leading-8 lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto mb-8">
           Loved by
           <span className="bg-[#111111] bg-gradient-to-r from-[#65F571] to-[#01B9FF] text-transparent bg-clip-text ml-3">
             creators

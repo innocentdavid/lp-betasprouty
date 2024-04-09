@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import Vimeo from "@u-wave/react-vimeo";
 import { motion } from "framer-motion";
@@ -81,6 +81,20 @@ export default function VideoTestimonials() {
     }
   };
 
+  useEffect(() => {
+    const scrollContainer = document.getElementById("scrollContainer");
+    if (scrollContainer) {
+      scrollContainer.addEventListener(
+        "touchmove",
+        function (event) {
+          // Prevent horizontal scrolling/swiping on touch devices
+          event.preventDefault();
+        },
+        { passive: false }
+      );
+    }
+  }, []);
+
   return (
     <div className="">
       {videoUrl && (
@@ -88,34 +102,39 @@ export default function VideoTestimonials() {
       )}
 
       <div className="max-w-5xl mx-auto text-center mt-20 pb-4 px-4">
-        <div className="text-[28px] md:text-[32px] lg:text-[64px] lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto mb-8">
+        <div className="text-[30px] md:text-[32px] lg:text-5xl leading-8 font-dashboard text-center font-bold max-w-[940px] mx-auto _mb-8">
           Trusted by thousands of satisfied{" "}
           <span className="bg-purple-600 bg-gradient-to-r from-[#BA01B4] to-[#3D1DC2] text-transparent bg-clip-text">
             customers
           </span>
         </div>
-        <p className="mt-4 mb-2 sm:mb-0 sm:mt-6 sm:text-[21px] text-xl font-medium sm:leading-[32px] leading-snug text-gray-600 _text-left sm:text-center font-dashboard">
+        <p className="mt-4 mb-2 sm:mb-0 _sm:mt-6 sm:text-[21px] text-xl font-medium sm:leading-[32px] leading-snug text-gray-600 _text-left sm:text-center font-dashboard">
           Join the ranks of Miley Cyrus, Hulu, Khaby Lame and more
         </p>
       </div>
 
       <motion.div
-      layout
+        layout
         className="flex xl:justify-center gap-4 px-3 md:px-12 mt-8 w-full overflow-x-auto no-scrollbar min-w-[375px] max-w-[375px] md:min-w-[unset] md:max-w-[unset]"
+        id="scrollContainer"
         ref={sliderRef}
       >
         {VIDEO_TESTIMONIALS.map((Vtestimonial, index) => {
           return (
             <motion.div
-            layout
+              layout
               key={`V_testimonial-${index + 1}`}
-              className="relative min-h-[568px] _bg-[url(/images/vt-1.png)] bg-cover bg-center bg-no-repeat rounded-md min-w-[280px] md:min-w-[320px] lg:max-w-[500px]"
+              className="relative min-h-[400px] md:min-h-[568px] _bg-[url(/images/vt-1.png)] bg-cover bg-center bg-no-repeat rounded-md min-w-[280px] md:min-w-[320px] lg:max-w-[500px] cursor-pointer group font-dashboard"
               style={{
                 backgroundImage: `url(${Vtestimonial.bg})`,
               }}
+              onClick={() => {
+                setVideoUrl(Vtestimonial.videoUrl);
+                document.body.style.overflow = "hidden";
+              }}
             >
               <div
-                className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 cursor-pointer group"
+                className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 cursor-pointer _group"
                 onClick={() => {
                   setVideoUrl(Vtestimonial.videoUrl);
                   document.body.style.overflow = "hidden";
