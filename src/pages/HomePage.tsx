@@ -9,8 +9,8 @@ import Footer from "../components/Footer";
 import BentoGridCompt from "./homepageComponents/BentoGrid";
 import Pricing from "./homepageComponents/Pricing";
 import CTA from "./homepageComponents/CTA";
-import { SparklesPreview } from "../components/ui/sparkles-2-bg";
-import { AuroraBackground } from "../components/ui/aurora-background";
+// import { SparklesPreview } from "../components/ui/sparkles-2-bg";
+// import { AuroraBackground } from "../components/ui/aurora-background";
 // import AnimatedCard from "../components/animatedCard";
 
 export default function HomePage() {
