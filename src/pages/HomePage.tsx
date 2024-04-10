@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 import BentoGridCompt from "./homepageComponents/BentoGrid";
 import Pricing from "./homepageComponents/Pricing";
 import CTA from "./homepageComponents/CTA";
-// import { SparklesPreview } from "../components/ui/sparkles-2-bg";
+import { SparklesPreview } from "../components/ui/sparkles-2-bg";
 // import { AuroraBackground } from "../components/ui/aurora-background";
 // import AnimatedCard from "../components/animatedCard";
 
@@ -45,7 +45,7 @@ function Hero() {
   return (
     <div className="">
       {/* <AuroraBackground> */}
-      {/* <SparklesPreview> */}
+      <SparklesPreview>
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ function Hero() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="relative flex flex-col gap-4 items-center justify-center px-4 pt-20 text-white bg-gray-800 pb-6"
+          className="relative flex flex-col gap-4 items-center justify-center px-4 pt-20 text-white _bg-gray-800 _pb-6"
         >
           <div className="max-w-5xl mx-auto text-center">
             <h1 className="group hero-h1-gradient _text-left sm:text-center whitespace-pre-wrap bg-clip-text text-transparent bg-gray-900 text-5xl _font-bold tracking-[-1.5px] sm:tracking-[-2px] _text-gray-900 sm:text-[45px] md:text-[50px] lg:text-[61px] leading-[39px] sm:leading-[65px] font-dashboard text-white">
@@ -328,7 +328,7 @@ function Hero() {
             </div>
           </div>
         </motion.div>
-      {/* </SparklesPreview> */}
+      </SparklesPreview>
       {/* </AuroraBackground> */}
 
       <BentoGridCompt />

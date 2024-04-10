@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { SparklesCore } from "../ui/sparkles";
+import { SparklesCore } from "../ui/sparkles-2";
 
 export function SparklesPreview({ children }: { children: ReactNode }) {
   return (

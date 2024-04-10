@@ -13,7 +13,7 @@ export function SparklesPreview2({ children }: { children: ReactNode }) {
     >
       <div className="w-full absolute inset-0 _h-screen">
         <SparklesCore
-          id="tsparticlesfullpage"
+          id="tsparticlesfullpage-2"
           background="transparent"
           minSize={0.6}
           maxSize={1.4}
