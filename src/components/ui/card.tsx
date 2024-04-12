@@ -18,11 +18,11 @@ const Card = ({
     <div className="flex-1 font-dashboard">
       <div className="flex w-[85%] mx-auto p-[14px] bg-white border-zinc-200 border rounded-[12px]">
         {/* First Side */}
-          <img
-            className="h-10 min-w-10 rounded-full m-1"
-            src={img ? img : "/images/bentoGrid/morganstewart.png"}
-            alt="Profile Pic"
-          />
+        <img
+          className="h-10 min-w-10 rounded-full m-1"
+          src={img ? img : "/images/bentoGrid/morganstewart.png"}
+          alt="Profile Pic"
+        />
 
         {/* Second Side */}
         <div className="p-1 w-60">
@@ -56,45 +56,44 @@ const Card = ({
   );
 };
 
-// export const CardX = ({
-//   heading,
-//   subHead,
-//   description,
-//   img,
-// }: {
-//   heading?: string;
-//   subHead?: string;
-//   description?: string;
-//   img?: string;
-// }) => {
+export const CardX = ({
+  // heading,
+  subHead,
+  description,
+  img,
+}: {
+  heading?: string;
+  subHead?: string;
+  description?: string;
+  img?: string;
+}) => {
+  return (
+    <div className="flex-1 rounded-xl shadow-lg ">
+      <div className="flex w-full p-2 bg-white border-zinc-200 border rounded-[16px]">
+        {/* First Side */}
+        <div className="p-1 w-20">
+          <img
+            className="h-16 w-16 rounded-full"
+            src={img ? img : "/images/bentoGrid/morganstewart.png"}
+            alt="Profile Pic"
+          />
+        </div>
 
-//   return (
-//     <div className="flex-1 rounded-xl shadow-lg ">
-//       <div className="flex w-full p-2 bg-white border-zinc-200 border rounded-xl">
-//         {/* First Side */}
-//         <div className="p-1 w-20">
-//           <img
-//             className="h-16 w-16 rounded-full"
-//             src={img ? img : "/images/bentoGrid/morganstewart.png"}
-//             alt="Profile Pic"
-//           />
-//         </div>
-
-//         {/* Second Side */}
-//         <div className="p-1 w-60">
-//           <h3 className="text-md font-medium mb-2 text-gray-700">
-//             {subHead ? subHead : "Sub-heading Text"}
-//             <span className="text-gray-400 text-sm">@poster</span>
-//           </h3>
-//           <p className="text-gray-500 text-sm">
-//             {description
-//               ? description
-//               : "Having followers is making you seem more reliable."}
-//           </p>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
+        {/* Second Side */}
+        <div className="p-1 w-60">
+          <h3 className="text-md font-medium mb-2 text-gray-700">
+            {subHead ? subHead : "Morgan"}
+            <span className="text-gray-400 text-sm ml-1">@morganstewart</span>
+          </h3>
+          <p className="text-gray-500 text-sm">
+            {description
+              ? description
+              : `Reply with "DM" to get early access to my new collection.`}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Card;
