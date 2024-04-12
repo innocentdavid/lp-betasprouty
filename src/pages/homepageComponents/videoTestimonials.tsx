@@ -145,7 +145,7 @@ export default function VideoTestimonials() {
                   backgroundImage: `url(${Vtestimonial.bg})`,
                 }}
               >
-                <div className="flex items-center gap-2 justify-between py-[17px] px-[16px] bg-gradient-to-b from-black text-white">
+                <div className="flex items-center gap-2 justify-between py-[17px] px-[16px] bg-gradient-to-b from-black text-white rounded-t-[12px]">
                   <div className="flex items-center gap-2">
                     <img
                       src={Vtestimonial.playIcon}
