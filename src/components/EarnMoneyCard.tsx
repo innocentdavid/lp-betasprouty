@@ -57,7 +57,7 @@ const SkeletonTwo = () => {
         //zIndexSet1('z-10');
       }}
     >
-      <motion.div className="text-left">
+      {/* <motion.div className="text-left">
         <motion.label
           className={
             "p-2 mb-2 rounded-full border-2 font-semibold text-[11px] text-center text-blue-500 border-blue-500"
@@ -65,7 +65,7 @@ const SkeletonTwo = () => {
         >
           New
         </motion.label>
-      </motion.div>
+      </motion.div> */}
 
       <motion.div className=" w-full flex flex-col items-center justify-left max-sm:scale-90 text-left relative">
         <motion.div variants={variant1} className={"relative "}>
