@@ -28,7 +28,7 @@ export default function BentoGridCompt() {
 
 export function BentoGridThirdDemo() {
   return (
-    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+    <BentoGrid className="max-w-4xl xl:max-w-6xl mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
