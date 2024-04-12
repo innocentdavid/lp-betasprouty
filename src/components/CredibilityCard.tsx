@@ -56,7 +56,7 @@ const SkeletonOne = () => {
       <motion.div className="text-left">
         <motion.label
           className={
-            "p-2 text-neutral-200 rounded-full border-[#1DA1F2]/60 border font-midium text-[11px] font-inter text-center " +
+            "p-2 text-sky-500 rounded-full border-[#1DA1F2]/60 border font-midium text-[11px] font-inter text-center " +
             colorFlip
           }
         >

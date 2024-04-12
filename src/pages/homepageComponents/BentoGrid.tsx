@@ -199,7 +199,24 @@ const SkeletonFour = () => {
     >
       <motion.div
         variants={first}
-        className="h-[calc(100%-40px)] my-auto w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
+        className="h-[calc(100%-40px)] my-auto w-1/3 rounded-2xl bg-white p-4 border border-[#79849A] flex flex-col items-center justify-center"
+        style={{
+          border: "1px solid #EEF0F1",
+          // boxShadow: `
+          // #79849acc 0px 8px 20px -6px,
+          // #79849a99 0px 1px 4px -1px,
+          // #79849a99 0px 0px 2px 0px,
+          // #79849a 0px 4px 10px -4px,
+          // #79849a 0px 8px 46px -6px
+          // `,
+          boxShadow: `
+            rgba(121, 132, 154, 0.8) 0px 8px 20px -6px, 
+            rgba(121, 132, 154, 0.6) 0px 1px 4px -1px, 
+            rgba(121, 132, 154, 0.6) 0px 0px 2px 0px,
+            rgba(121, 132, 154, 0.6) 0px 4px 10px -4px,
+            rgba(121, 132, 154, 0.6) 0px 8px 46px -6px
+          `,
+        }}
       >
         <img
           src="/images/bentoGrid/adambooker.png"
@@ -215,7 +232,24 @@ const SkeletonFour = () => {
         <p className="text-[#79849A] text-xs mt-1">617 Followers</p>
       </motion.div>
 
-      <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
+      <motion.div
+        className="h-[fit-content] relative z-20 w-1/3 rounded-2xl bg-white py-[20.4px] px-[15.6px] border border-[#79849A] flex flex-col items-center justify-center"
+        style={{
+          border: "1px solid #EEF0F1",
+          // boxShadow: `
+          // #79849acc 0px 8px 20px -6px, 
+          // #79849a99 0px 1px 4px -1px, 
+          // #79849a99 0px 0px 2px 0px,
+          // rgba(0, 0, 0, 0.25) 0px 4px 4px 0px
+          // `,
+          boxShadow: `
+          rgba(121, 132, 154, 0.8) 0px 8px 20px -6px, 
+          rgba(121, 132, 154, 0.6) 0px 1px 4px -1px, 
+          rgba(121, 132, 154, 0.6) 0px 0px 2px 0px, 
+          rgba(0, 0, 0, 0.25) 0px 4px 4px 0px
+          `
+        }}
+      >
         <div className="relative">
           <img
             src="/images/bentoGrid/morganstewart.png"
@@ -238,7 +272,7 @@ const SkeletonFour = () => {
         </p>
         <p className="text-[#79849A] text-xs mt-1">1.7M Followers</p>
         <div className="flex items-center gap-2">
-          <div className="text-[#79849A] text-xs mt-1">using</div>
+          <div className="text-[#79849A] text-xs">using</div>
           <svg
             width="14"
             height="14"
@@ -270,7 +304,24 @@ const SkeletonFour = () => {
 
       <motion.div
         variants={second}
-        className="h-[calc(100%-40px)] my-auto w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
+        className="h-[calc(100%-40px)] my-auto w-1/3 rounded-2xl bg-white p-4 border border-[#79849A] flex flex-col items-center justify-center"
+        style={{
+          border: "1px solid #EEF0F1",
+          // boxShadow: `
+          // #79849acc 0px 8px 20px -6px,
+          // #79849a99 0px 1px 4px -1px,
+          // #79849a99 0px 0px 2px 0px,
+          // #79849a 0px 4px 10px -4px,
+          // #79849a 0px 8px 46px -6px
+          // `,
+          boxShadow: `
+            rgba(121, 132, 154, 0.8) 0px 8px 20px -6px, 
+            rgba(121, 132, 154, 0.6) 0px 1px 4px -1px, 
+            rgba(121, 132, 154, 0.6) 0px 0px 2px 0px,
+            rgba(121, 132, 154, 0.6) 0px 4px 10px -4px,
+            rgba(121, 132, 154, 0.6) 0px 8px 46px -6px
+          `,
+        }}
       >
         <img
           src="/images/bentoGrid/miragoossens.png"

@@ -1,13 +1,18 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
-    <header className="navbar-section absolute top-0 left-0 w-full z-[99] text-white">
+    <header
+      className={`navbar-section absolute top-0 left-0 w-full z-[99] text-white 
+      ${
+        window && window.location.pathname !== "/" && "!text-black"}
+      `}
+    >
       <nav className="bg-transparent bg-opacity-90 backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8 relative z-50 flex justify-between py-5">
-          <div className="relative z-10 flex items-center gap-16">
+          <div className="relative z-10 flex items-center _gap-16">
             <a href="/">
               <div className="group flex items-center gap-2 w-auto h-10">
                 <img
@@ -21,15 +26,15 @@ export default function Navbar() {
                   data-nimg="1"
                   className="inline-block w-auto h-10 text-transparent"
                   //   style="color:transparent"
-                //   src="https://www.upgrow.com/img/upgrow-logo-text-minified.svg"
+                  //   src="https://www.upgrow.com/img/upgrow-logo-text-minified.svg"
                   src="/logo-light-long.png"
                 />
               </div>
             </a>
           </div>
-          <div className="relative z-10 flex items-center gap-16">
-            <div className="hidden lg:flex lg:gap-10">
-              <div className="flex items-center gap-10">
+          <div className="relative z-10 flex items-center xl:gap-16">
+            <div className="hidden lg:flex lg:gap-4 xl:gap-10">
+              <div className="flex items-center gap-4 xl:gap-10">
                 <a
                   className="inline-flex items-center px-3 py-2 text-base font-medium _text-gray-600 transition-colors duration-100 group hover:no-underline hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 hover:bg-gray-100 rounded-xl whitespace-nowrap"
                   href="/#instagram-growth"
@@ -57,6 +62,7 @@ export default function Navbar() {
               </div>
             </div>
           </div>
+
           <div className="flex items-center gap-6">
             {/* mobile menu */}
             <div className="lg:hidden" data-headlessui-state="">

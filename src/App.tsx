@@ -4,6 +4,8 @@ import "./styles/App.css";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
 import NotFound from "./pages/NotFound";
+import Privacy from "./pages/privacy";
+import TermsOfService from "./pages/TermsOfService";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/privacy" element={<Privacy />} />
           {/* <Route path='/:matchId' element={<Match />} /> */}
           {/* <Route path='/bet' element={<Bet />} /> */}
           {/* <Route path="/harybet" element={<HaryBet />} /> */}

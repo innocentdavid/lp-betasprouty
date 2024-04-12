@@ -10,12 +10,17 @@ import BentoGridCompt from "./homepageComponents/BentoGrid";
 import Pricing from "./homepageComponents/Pricing";
 import CTA from "./homepageComponents/CTA";
 import { SparklesPreview } from "../components/ui/sparkles-2-bg";
+import { Helmet } from "react-helmet";
 // import { AuroraBackground } from "../components/ui/aurora-background";
 // import AnimatedCard from "../components/animatedCard";
 
 export default function HomePage() {
   return (
     <>
+      <Helmet>
+        <title>SproutySocial</title>
+      </Helmet>
+
       <div className="">
         <Hero />
       </div>

@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 auto-cols-auto xl:grid-cols-5 gap-10 md:gap-4 w-full">
+        <div className="grid grid-cols-2 md:grid-cols-3 justify-items-center auto-cols-auto xl:grid-cols-4 gap-10 md:gap-4 w-full">
           <div className="">
             <div className="mb-[20px] text-[#111827] font-bold uppercase">
               PRODUCT
@@ -386,10 +386,10 @@ export default function Footer() {
         </svg>
 
         <div className="flex items-center gap-3">
-          <Link to={"#terms-of-service"} className="hover:text-blue-500">
+          <Link to={"/terms-of-service"} className="hover:text-blue-500">
             Terms of Service
           </Link>
-          <Link to={"#privacy"} className="hover:text-blue-500">
+          <Link to={"/privacy"} className="hover:text-blue-500">
             Privacy
           </Link>
         </div>
