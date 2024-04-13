@@ -16,7 +16,7 @@ const Card = ({
 }) => {
   return (
     <div className="flex-1 font-dashboard">
-      <div className="flex w-[85%] xl:w-full mx-auto p-[14px] bg-white border-zinc-200 border rounded-[12px]">
+      <div className="flex w-[85%] xl:w-full mx-auto p-[14px] bg-white border-zinc-200 border _rounded-[12px] rounded-xl shadow-lg">
         {/* First Side */}
         <img
           className="h-10 min-w-10 xl:h-14 xl:min-w-14 rounded-full m-1"
@@ -68,7 +68,7 @@ export const CardX = ({
   img?: string;
 }) => {
   return (
-    <div className="flex-1 rounded-xl shadow-lg ">
+    <div className="flex-1 rounded-xl shadow-lg">
       <div className="flex w-full p-2 bg-white border-zinc-200 border rounded-[16px]">
         {/* First Side */}
         <div className="p-1 w-20">

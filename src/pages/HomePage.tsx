@@ -333,6 +333,8 @@ function Hero() {
             </div>
           </div>
         </motion.div>
+
+        <div className="absolute bottom-0 left-0 w-full min-h-10 bg-gradient-to-t from-[#F9F9FA]"></div>
       </SparklesPreview>
       {/* </AuroraBackground> */}
 

@@ -471,7 +471,7 @@ export default function Testimonials() {
             !showMore && "max-h-[1200px] overflow-hidden"
           } relative`}
         >
-          {!showMore && <div className="absolute bottom-0 left-0 w-full min-h-[200px] _bg-white/70 bg-gradient-to-t from-[#F9F9FA] to-white/70"></div>}
+          {!showMore && <div className="absolute bottom-0 left-0 w-full min-h-[300px] _bg-white/70 bg-gradient-to-t from-[#F9F9FA] via-white/70 pointer-events-none"></div>}
 
           {TESTIMONIALS.filter((item) => {
             if (selectedCatg === "All") {
@@ -525,7 +525,7 @@ export default function Testimonials() {
             className="rounded-[12px] border shadow-lg py-2 w-full max-w-[150px] text-center bg-white cursor-pointer font-semibold font-dashboard"
             onClick={() => setShowMore(!showMore)}
           >
-            {showMore ? "Show more" : "Show less"}
+            {!showMore ? "Show more" : "Show less"}
           </div>
         </div>
       </div>

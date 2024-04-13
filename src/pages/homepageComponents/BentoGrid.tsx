@@ -7,7 +7,7 @@ import EarnMoneyCard from "../../components/EarnMoneyCard";
 
 export default function BentoGridCompt() {
   return (
-    <div className="mt-4">
+    <div className="-mt-16 2xl:-mt-40">
       {/* <div className="max-w-5xl mx-auto text-center mt-20 pb-4 px-4">
         <div className="text-[30px] md:text-[32px] lg:text-[48px] leading-8 lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto mb-8">
           Loved by
@@ -28,7 +28,7 @@ export default function BentoGridCompt() {
 
 export function BentoGridThirdDemo() {
   return (
-    <BentoGrid className="max-w-4xl xl:max-w-6xl mx-auto md:auto-rows-[20rem]">
+    <BentoGrid className="max-w-4xl xl:max-w-6xl mx-auto md:auto-rows-[20rem] relative z-[9999] rounded-xl">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -200,9 +200,9 @@ const SkeletonFour = () => {
     >
       <motion.div
         variants={first}
-        className="h-[calc(100%-40px)] my-auto w-1/3 rounded-2xl bg-white p-4 border border-[#79849A] flex flex-col items-center justify-center"
+        className="h-[calc(100%-40px)] my-auto w-1/3 _rounded-2xl bg-white p-4 border border-[#79849A] flex flex-col items-center justify-center rounded-xl shadow-lg"
         style={{
-          border: "1px solid #EEF0F1",
+          border: "2px solid #EEF0F1",
           // boxShadow: `
           // #79849acc 0px 8px 20px -6px,
           // #79849a99 0px 1px 4px -1px,
@@ -210,13 +210,13 @@ const SkeletonFour = () => {
           // #79849a 0px 4px 10px -4px,
           // #79849a 0px 8px 46px -6px
           // `,
-          boxShadow: `
-            rgba(121, 132, 154, 0.8) 0px 8px 20px -6px, 
-            rgba(121, 132, 154, 0.6) 0px 1px 4px -1px, 
-            rgba(121, 132, 154, 0.6) 0px 0px 2px 0px,
-            rgba(121, 132, 154, 0.6) 0px 4px 10px -4px,
-            rgba(121, 132, 154, 0.6) 0px 8px 46px -6px
-          `,
+          // boxShadow: `
+          //   rgba(121, 132, 154, 0.8) 0px 8px 20px -6px, 
+          //   rgba(121, 132, 154, 0.6) 0px 1px 4px -1px, 
+          //   rgba(121, 132, 154, 0.6) 0px 0px 2px 0px,
+          //   rgba(121, 132, 154, 0.6) 0px 4px 10px -4px,
+          //   rgba(121, 132, 154, 0.6) 0px 8px 46px -6px
+          // `,
         }}
       >
         <img
@@ -234,21 +234,21 @@ const SkeletonFour = () => {
       </motion.div>
 
       <motion.div
-        className="h-[fit-content] relative z-20 w-1/3 rounded-2xl bg-white py-[20.4px] px-[15.6px] border border-[#79849A] flex flex-col items-center justify-center"
+        className="h-[fit-content] relative z-20 w-1/3 _rounded-2xl bg-white py-[20.4px] px-[15.6px] border border-[#79849A] flex flex-col items-center justify-center rounded-xl shadow-lg"
         style={{
-          border: "1px solid #EEF0F1",
+          border: "2px solid #EEF0F1",
           // boxShadow: `
           // #79849acc 0px 8px 20px -6px, 
           // #79849a99 0px 1px 4px -1px, 
           // #79849a99 0px 0px 2px 0px,
           // rgba(0, 0, 0, 0.25) 0px 4px 4px 0px
           // `,
-          boxShadow: `
-          rgba(121, 132, 154, 0.8) 0px 8px 20px -6px, 
-          rgba(121, 132, 154, 0.6) 0px 1px 4px -1px, 
-          rgba(121, 132, 154, 0.6) 0px 0px 2px 0px, 
-          rgba(0, 0, 0, 0.25) 0px 4px 4px 0px
-          `
+          // boxShadow: `
+          // rgba(121, 132, 154, 0.8) 0px 8px 20px -6px, 
+          // rgba(121, 132, 154, 0.6) 0px 1px 4px -1px, 
+          // rgba(121, 132, 154, 0.6) 0px 0px 2px 0px, 
+          // rgba(0, 0, 0, 0.25) 0px 4px 4px 0px
+          // `
         }}
       >
         <div className="relative">
@@ -305,9 +305,9 @@ const SkeletonFour = () => {
 
       <motion.div
         variants={second}
-        className="h-[calc(100%-40px)] my-auto w-1/3 rounded-2xl bg-white p-4 border border-[#79849A] flex flex-col items-center justify-center"
+        className="h-[calc(100%-40px)] my-auto w-1/3 _rounded-2xl bg-white p-4 border border-[#79849A] flex flex-col items-center justify-center rounded-xl shadow-lg"
         style={{
-          border: "1px solid #EEF0F1",
+          border: "2px solid #EEF0F1",
           // boxShadow: `
           // #79849acc 0px 8px 20px -6px,
           // #79849a99 0px 1px 4px -1px,
@@ -315,13 +315,13 @@ const SkeletonFour = () => {
           // #79849a 0px 4px 10px -4px,
           // #79849a 0px 8px 46px -6px
           // `,
-          boxShadow: `
-            rgba(121, 132, 154, 0.8) 0px 8px 20px -6px, 
-            rgba(121, 132, 154, 0.6) 0px 1px 4px -1px, 
-            rgba(121, 132, 154, 0.6) 0px 0px 2px 0px,
-            rgba(121, 132, 154, 0.6) 0px 4px 10px -4px,
-            rgba(121, 132, 154, 0.6) 0px 8px 46px -6px
-          `,
+          // boxShadow: `
+          //   rgba(121, 132, 154, 0.8) 0px 8px 20px -6px, 
+          //   rgba(121, 132, 154, 0.6) 0px 1px 4px -1px, 
+          //   rgba(121, 132, 154, 0.6) 0px 0px 2px 0px,
+          //   rgba(121, 132, 154, 0.6) 0px 4px 10px -4px,
+          //   rgba(121, 132, 154, 0.6) 0px 8px 46px -6px
+          // `,
         }}
       >
         <img
@@ -374,7 +374,7 @@ const SkeletonFive = () => {
     >
       <motion.div
         variants={variants}
-        className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+        className="flex flex-row rounded-2xl _rounded-xl shadow-lg border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
       >
         <img
           src="/public/images/bentoGrid/morganstewart.png"
@@ -389,9 +389,10 @@ const SkeletonFive = () => {
           advice?
         </p>
       </motion.div>
+
       <motion.div
         variants={variantsSecond}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
+        className="flex flex-row rounded-full _rounded-xl shadow-lg border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
       >
         <p className="text-xs text-neutral-500">
           Try to recreate your reel you have uploaded on 21st of Feb.
