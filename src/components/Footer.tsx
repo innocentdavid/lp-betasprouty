@@ -53,18 +53,18 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-col gap-4">
-              <p className="">Pricing</p>
-              <p className="">Video Reviews</p>
-              <p className="">Text Reviews</p>
-              <p className="">Blog</p>
+              <Link to={"/#pricing"} className="">Pricing</Link>
+              <Link to={"/#video-reviews"} className="">Video Reviews</Link>
+              <Link to={"/#reviews"} className="">Text Reviews</Link>
+              <a href="https://blog.sproutysocial.com" className="">Blog</a>
               <p className="">Contact Us</p>
               <p className="">Press Kit</p>
               <p className="">
                 Careers <span className="text-blue-500">— We're hiring</span>
               </p>
-              <p className="">
+              <a href="https://sproutysocial.getrewardful.com/signup" className="">
                 Affiliate <span className="text-blue-500">— Earn 25%</span>
-              </p>
+              </a>
             </div>
           </div>
 

@@ -41,7 +41,7 @@ const SkeletonOne = () => {
     <motion.div
       initial="initial"
       whileHover="animate"
-      className="w-full relative font-dashboard"
+      className="w-full relative h-full flex flex-col justify-between"
       onHoverStart={() => {
         setColorFlip("text-red-500 border-red-500");
         zIndexSet1("z-20");
@@ -53,34 +53,33 @@ const SkeletonOne = () => {
         setLabelText("With Sprouty");
       }}
     >
-      <motion.div className="text-left">
-        <motion.label
-          className={
-            "p-2 text-sky-500 rounded-full border-[#1DA1F2]/60 border font-midium text-[11px] font-inter text-center " +
-            colorFlip
-          }
-        >
-          {labelText}
-        </motion.label>
-      </motion.div>
+      <motion.div className="">
+        <motion.div className="text-left">
+          <motion.label
+            className={
+              "p-2 text-sky-500 rounded-full border-[#1DA1F2]/60 border font-midium text-[11px] font-inter text-center " +
+              colorFlip
+            }
+          >
+            {labelText}
+          </motion.label>
+        </motion.div>
 
-      <motion.div className="w-full flex flex-col items-center justify-left max-sm:scale-90 text-left relative">
-        <motion.div variants={variant1} className={"absolute " + zIndex1}>
-          <Card valueText="+81" valueStyle="bg-red-500 text-white" />
+        <motion.div className="w-full flex flex-col items-center justify-left max-sm:scale-90 text-left relative">
+          <motion.div variants={variant1} className={"absolute " + zIndex1}>
+            <Card valueText="+81" valueStyle="bg-red-500 text-white" />
+          </motion.div>
+          <motion.div variants={variant2} className={"absolute " + zIndex2}>
+            <Card heading="" />
+          </motion.div>
+          <motion.div className={"h-[170px]"}></motion.div>
         </motion.div>
-        <motion.div variants={variant2} className={"absolute " + zIndex2}>
-          <Card heading="" />
-        </motion.div>
-        <motion.div className={"h-[170px]"}></motion.div>
       </motion.div>
 
       <motion.div className="group-hover/bento:translate-x-2 transition duration-200 text-left relative bottom-1 ">
-        <h1 className="font-bold text-black mb-1">
-          Increase Credibility
-        </h1>
+        <h1 className="font-bold text-black mb-1">Increase Credibility</h1>
         <p className="font-sans font-normal text-neutral-600 text-md">
-          Having followers is making you seem more reliable and important,
-          attracting more attention.
+          Having followers is making you seem more reliable and important.
         </p>
       </motion.div>
     </motion.div>
@@ -89,7 +88,7 @@ const SkeletonOne = () => {
 
 function CredibilityCard() {
   return (
-    <div className="p-4">
+    <div className="p-4 h-full">
       <SkeletonOne />
     </div>
   );

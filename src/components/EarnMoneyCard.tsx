@@ -49,7 +49,7 @@ const SkeletonTwo = () => {
     <motion.div
       initial="initial"
       whileHover="animate"
-      className="w-full relative"
+      className="h-full w-full relative flex flex-col justify-between"
       onHoverStart={() => {
         //zIndexSet1('z-20');
       }}
@@ -72,7 +72,12 @@ const SkeletonTwo = () => {
           <CardX />
         </motion.div>
         <motion.div variants={variant2} className={"relative"}>
-          <CardX />
+          <CardX 
+          img="/images/bentoGrid/jennylliana.png"
+          fullName="Jenny"
+          username="@jennylliana"
+          description="DM🤞"
+          />
           <motion.div
             className="text-left absolute bottom-0 right-0"
             variants={variant3}
@@ -82,18 +87,18 @@ const SkeletonTwo = () => {
                 "p-2 rounded-full font-semibold text-[14px] text-center text-white bg-green-500 "
               }
             >
-              DM Sent
+              Message sent
             </motion.label>
           </motion.div>
         </motion.div>
       </motion.div>
 
       <motion.div className="group-hover/bento:translate-x-2 transition duration-200 text-left relative bottom-1 ">
-        <h1 className="font-sans font-semibold text-black-600 dark:text-neutral-200 mb-1 text-md">
+        <h4 className="font-bold text-black mb-1">
           Earn Money
-        </h1>
-        <p className="font-sans font-normal text-neutral-600 dark:text-neutral-300 text-sm">
-          Get paid for promotions or advertise your business with Instagram!
+        </h4>
+        <p className="font-normal text-neutral-600 dark:text-neutral-300">
+          Get paid for promotions or advertise your business with.
         </p>
       </motion.div>
     </motion.div>
@@ -102,7 +107,7 @@ const SkeletonTwo = () => {
 
 function EarnMoneyCard() {
   return (
-    <div className="p-4">
+    <div className="p-4 h-full">
       <SkeletonTwo />
     </div>
   );

@@ -7,15 +7,15 @@ import EarnMoneyCard from "../../components/EarnMoneyCard";
 
 export default function BentoGridCompt() {
   return (
-    <div className="-mt-16 2xl:-mt-40">
+    <div className="_-mt-16 mt-10 md:mt-20 xl:-mt-16 2xl:-mt-40 font-inter">
       {/* <div className="max-w-5xl mx-auto text-center mt-20 pb-4 px-4">
-        <div className="text-[30px] md:text-[32px] lg:text-[48px] leading-8 lg:leading-[70px] font-dashboard text-center font-bold max-w-[940px] mx-auto mb-8">
+        <div className="text-[30px] md:text-[32px] lg:text-[48px] leading-8 lg:leading-[70px] text-center font-bold max-w-[940px] mx-auto mb-8">
           Loved by
           <span className="bg-[#111111] bg-gradient-to-r from-[#65F571] to-[#01B9FF] text-transparent bg-clip-text ml-3">
             creators
           </span>
         </div>
-        <p className="mb-2 sm:mb-0 sm:mt-6 sm:text-[21px] text-xl font-medium sm:leading-[32px] leading-snug text-gray-600 _text-left sm:text-center font-dashboard max-w-[700px] mx-auto">
+        <p className="mb-2 sm:mb-0 sm:mt-6 sm:text-[21px] text-xl font-medium sm:leading-[32px] leading-snug text-gray-600 _text-left sm:text-center max-w-[700px] mx-auto">
           23,000+ creators and businesses have chosen Sprouty to grow their
           Instagram presence.
         </p>
@@ -564,8 +564,7 @@ const items = [
     title: "Dedicated Account Manager",
     description: (
       <span className="text-sm">
-        Our committed customer support team are always ready to assist you with
-        any questions about your account.
+        Our committed customer support team are always ready to assist you.
       </span>
     ),
     header: <SkeletonFive />,

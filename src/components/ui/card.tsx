@@ -58,12 +58,14 @@ const Card = ({
 
 export const CardX = ({
   // heading,
-  subHead,
+  fullName,
+  username,
   description,
   img,
 }: {
   heading?: string;
-  subHead?: string;
+  fullName?: string;
+  username?: string;
   description?: string;
   img?: string;
 }) => {
@@ -82,8 +84,8 @@ export const CardX = ({
         {/* Second Side */}
         <div className="p-1 w-60">
           <h3 className="text-md font-medium mb-2 text-gray-700">
-            {subHead ? subHead : "Morgan"}
-            <span className="text-gray-400 text-sm ml-1">@morganstewart</span>
+            {fullName ? fullName : "Morgan"}
+            <span className="text-gray-400 text-sm ml-1">{username ?? "@morganstewart"}</span>
           </h3>
           <p className="text-gray-500 text-sm">
             {description

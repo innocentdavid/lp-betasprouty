@@ -102,7 +102,7 @@ export default function VideoTestimonials() {
   }, []);
 
   return (
-    <div className="">
+    <div className="" id="video-reviews">
       {videoUrl && (
         <VideoPlayer videoUrl={videoUrl} setVideoUrl={setVideoUrl} />
       )}
@@ -114,14 +114,99 @@ export default function VideoTestimonials() {
             customers
           </span>
         </div>
-        <p className="mt-4 mb-2 sm:mb-0 _sm:mt-6 sm:text-[21px] text-xl font-medium sm:leading-[32px] leading-snug text-gray-600 _text-left sm:text-center font-dashboard">
-          Join the ranks of Miley Cyrus, Hulu, Khaby Lame and more
+
+        <p className="mt-8 mb-2 sm:mb-0 _sm:mt-6 sm:text-[21px] text-xl font-medium sm:leading-[32px] leading-snug text-gray-600 _text-left sm:text-center font-dashboard">
+          From influencers to businesses, Sprouty helps thousands of people grow
+          their Instagram presence.
         </p>
+
+        <div className="flex justify-center font-dashboard font-medium text-[18px] mt-8">
+          <div className="div-flex-4">
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24.44 13.2708C24.44 12.4258 24.3642 11.6133 24.2233 10.8333H13V15.4483H19.4133C19.1317 16.9325 18.2867 18.1891 17.0192 19.0341V22.035H20.8867C23.14 19.955 24.44 16.9 24.44 13.2708Z"
+                fill="#4285F4"
+              />
+              <path
+                d="M12.9997 24.9167C16.2172 24.9167 18.9147 23.855 20.8863 22.035L17.0188 19.0342C15.9572 19.7492 14.603 20.1825 12.9997 20.1825C9.90133 20.1825 7.26883 18.0917 6.32633 15.275H2.36133V18.3517C4.32216 22.2409 8.34133 24.9167 12.9997 24.9167Z"
+                fill="#34A853"
+              />
+              <path
+                d="M6.32634 15.2642C6.08801 14.5492 5.94717 13.7908 5.94717 13C5.94717 12.2092 6.08801 11.4508 6.32634 10.7358V7.65918H2.36134C1.54884 9.26251 1.08301 11.0717 1.08301 13C1.08301 14.9283 1.54884 16.7375 2.36134 18.3408L5.44884 15.9358L6.32634 15.2642Z"
+                fill="#FBBC05"
+              />
+              <path
+                d="M12.6383 5.745C14.3933 5.745 15.9533 6.35167 17.1992 7.52167L20.6117 4.10917C18.5425 2.18083 15.8558 1 12.6383 1C7.98 1 3.96083 3.67583 2 7.57583L5.965 10.6525C6.9075 7.83583 9.54 5.745 12.6383 5.745Z"
+                fill="#EA4335"
+              />
+            </svg>
+            <div className="">4.73</div>
+            <div className="div-flex-5">
+              <div className="svg-3">
+                <img
+                  src="/icons/star.svg"
+                  loading="lazy"
+                  width="14.868390083312988"
+                  height="14.240479469299316"
+                  alt=""
+                  className="vectors-wrapper-7"
+                />
+              </div>
+              <div className="svg-3">
+                <img
+                  src="/icons/star.svg"
+                  loading="lazy"
+                  width="14.868390083312988"
+                  height="14.240479469299316"
+                  alt=""
+                  className="vectors-wrapper-7"
+                />
+              </div>
+              <div className="svg-3">
+                <img
+                  src="/icons/star.svg"
+                  loading="lazy"
+                  width="14.868390083312988"
+                  height="14.240479469299316"
+                  alt=""
+                  className="vectors-wrapper-7"
+                />
+              </div>
+              <div className="svg-3">
+                <img
+                  src="/icons/star.svg"
+                  loading="lazy"
+                  width="14.868390083312988"
+                  height="14.240479469299316"
+                  alt=""
+                  className="vectors-wrapper-7"
+                />
+              </div>
+              <div className="svg-3">
+                <img
+                  src="/icons/star.svg"
+                  loading="lazy"
+                  width="14.868390083312988"
+                  height="14.240479469299316"
+                  alt=""
+                  className="vectors-wrapper-7"
+                />
+              </div>
+            </div>
+            <div className="">from 391+ reviews</div>
+          </div>
+        </div>
       </div>
 
       <motion.div
         layout
-        className="flex xl:justify-center gap-4 px-3 md:px-12 mt-8 w-full overflow-x-auto no-scrollbar min-w-[375px] max-w-[375px] md:min-w-[unset] md:max-w-[unset]"
+        className="mt-16 flex xl:justify-center gap-4 px-3 md:px-12 w-full overflow-x-auto no-scrollbar min-w-[375px] max-w-[375px] md:min-w-[unset] md:max-w-[unset]"
         id="scrollContainer"
         ref={sliderRef}
       >
@@ -185,7 +270,7 @@ export default function VideoTestimonials() {
                   <div className="relative">
                     <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-[1]">
                       <svg
-                      className="group-hover:scale-125 transition-all duration-300"
+                        className="group-hover:scale-125 transition-all duration-300"
                         width="70"
                         height="70"
                         viewBox="0 0 70 70"

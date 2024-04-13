@@ -4,7 +4,7 @@ import { SparklesCore } from "../ui/sparkles-2";
 export function SparklesPreview({ children }: { children: ReactNode }) {
   return (
     <div
-      className="h-screen relative w-full bg-[#65f5714d] bg-gradient-to-tr from-[#65F5714d] to-[#01B9FF4d] flex flex-col items-center justify-center overflow-hidden rounded-md _text-white pb-20 2xl:pb-40"
+      className="h-screen relative w-full bg-[#65f5714d] bg-gradient-to-tr from-[#65F5714d] to-[#01B9FF4d] flex flex-col items-center justify-center overflow-hidden rounded-md _text-white _pb-20 md:pb-0 xl:pb-20 2xl:pb-40"
       style={{
         background: "rgb(247,247,247)",
         backgroundImage:

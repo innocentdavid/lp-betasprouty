@@ -67,13 +67,13 @@ const AnimatedCard = () => {
 
   return (
     <div
-      className="max-w-[350px] mx-auto h-full bg-transparent p-[18px] pt-[14px] flex flex-col gap-[0.5em] rounded-lg font-dashboard group hover:shadow-[rgba(36,_42,_66,_0.08)_0px_20px_70px_-10px,_rgba(36,_42,_66,_0.04)_0px_10px_24px_-8px,rgba(36,_42,_66,_0.06)_0px_1px_4px_-1px] relative overflow-hidden"
+      className="max-w-[350px] mx-auto h-full bg-transparent p-[18px] pt-[14px] flex flex-col gap-[0.5em] rounded-lg group hover:shadow-[rgba(36,_42,_66,_0.08)_0px_20px_70px_-10px,_rgba(36,_42,_66,_0.04)_0px_10px_24px_-8px,rgba(36,_42,_66,_0.06)_0px_1px_4px_-1px] relative overflow-hidden"
       onMouseEnter={handleHoverStart}
       onMouseLeave={handleMouseLeave}
     >
       <div className="absolute z-10 top-0 left-0 w-full h-full group-hover:bg-[#8e1c1c0a] group-hover:bg-gradient-to-tr from-[#BA01B4] to-[#3D1DC2] opacity-[0.02]"></div>
-      <div className="relative z-20">
-        <div className="mb-4 h-[132px] w-[216px] mx-auto bg-white relative p-4 rounded-[16px] overflow-hidden">
+      <div className="relative z-20 flex flex-col justify-between h-full">
+        <div className="mb-2 mt-4 h-[132px] w-[216px] mx-auto bg-white relative p-4 rounded-[16px] overflow-hidden">
           <div className="text-xs text-gray-500">
             +{followers}
             <br />
@@ -121,11 +121,13 @@ const AnimatedCard = () => {
           </motion.svg>
         </div>
 
-        <div className="font-bold text-black">Rapid Growth</div>
+        <div className="">
+          <h4 className="font-bold text-black mb-1">Rapid Growth</h4>
 
-        <p className="text-gray-500">
-        Clients using Sprouty typically see an average increase of around 1,300 followers every month.
-        </p>
+          <p className="text-gray-500">
+            Clients using Sprouty typically see an average increase of.
+          </p>
+        </div>
       </div>
     </div>
   );

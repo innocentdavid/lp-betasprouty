@@ -32,10 +32,10 @@ export default function CTA() {
                 fill="#FACA15"
               />
             </svg>
-            <span className="text-xs">4.9/5 - based on 350+ reviews</span>
+            <span className="text-xs"><strong>4.9</strong>/5 - based on 350+ reviews</span>
           </div>
           <div className="mt-3 font-bold text-[30px] md:text-4xl lg:text-5xl">
-            <div className="">Get Real & Targeted Followers</div>
+            <div className="bg-gradient-to-r from-white to-[#FFD9D9] text-transparent bg-clip-text">Get Real & Targeted Followers</div>
             <div className="text-black">Start for free today.</div>
           </div>
           <p className="mt-4 text-[18px]">
@@ -45,7 +45,7 @@ export default function CTA() {
           </p>
           <button
             type="button"
-            className="mt-[31px] bg-[#222222] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))]  from-[#282432] to-[#222222] h-[56px] max-w-[386px] w-full text-center rounded-[12px]"
+            className="mt-[31px] bg-[#222222] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))]  from-[#282432] to-[#222222] h-[56px] max-w-[386px] w-full text-center rounded-[12px] font-bold text-base"
           >
             Get started for free
           </button>

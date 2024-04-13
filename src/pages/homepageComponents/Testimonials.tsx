@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 const InstagramIcon = () => {
   return (
@@ -150,16 +150,16 @@ const TESTIMONIALS = [
     category: "Fitness",
   },
   {
-    avatar: "/images/testimonials/Niko Veit.png",
-    full_name: "Niko Veit",
-    username: "@nikoveit",
-    socialIcon: <LinkedInIcon />,
+    avatar: "/images/testimonials/Niko Veit.jpeg",
+    full_name: "Mega Mobil",
+    username: "@megamobil.si",
+    socialIcon: <InstagramIcon />,
     description: (
       <p>
-        First I canceled other IG services and I stopped using them entirely.
+        First we canceled other IG services and stopped using them entirely.
         <br />
         <br />
-        What am I using now?
+        What are we using now?
         <br />
         <br />
         This thing called SproutySocial 🎉
@@ -169,7 +169,7 @@ const TESTIMONIALS = [
         analytics and growth options they have.
         <br />
         <br />
-        Now the focus is on my content only!
+        Now the focus is on our content only!
       </p>
     ),
     category: "Business", // Implies a focus on content strategy, likely business-related
@@ -178,7 +178,7 @@ const TESTIMONIALS = [
     avatar: "/images/testimonials/Barbara.png",
     full_name: "Barbara",
     username: "",
-    socialIcon: <InstagramIcon />,
+    socialIcon: <TrustPilot />,
     description: (
       <p>
         I love the growth! At first they needed sometime to get my account fully
@@ -260,18 +260,17 @@ const TESTIMONIALS = [
     socialIcon: <TrustPilot />,
     description: (
       <p>
-        I love Tella, it's a tool that has incredibly sped up my content
-        creation speed. If I'm growing quickly on YouTube, I owe it also to
-        Tella.
+        I love Sprouty, it's a tool that has incredibly sped up my followers
+        growth. Incredible service for a reasonable price!
       </p>
     ),
-    category: "Others", // Category not clearly defined, could be related to content creation
+    category: "Photography", // Category not clearly defined, could be related to content creation
   },
   {
     avatar: "/images/testimonials/Restaurant.png",
     full_name: "Restaurant",
     username: "@gostisceirsic",
-    socialIcon: <TwitterIcon />,
+    socialIcon: <InstagramIcon />,
     description: (
       <p>
         One of my favorite things about SproutySocial is how simple you can add
@@ -291,7 +290,7 @@ const TESTIMONIALS = [
     avatar: "/images/testimonials/Alain Wassenaar.png",
     full_name: "Alain Wassenaar",
     username: "@alainwassenaar",
-    socialIcon: <TwitterIcon />,
+    socialIcon: <InstagramIcon />,
     description: (
       <p>
         SproutySocial is definitely one of the best providers for Instagram
@@ -330,9 +329,9 @@ const TESTIMONIALS = [
     socialIcon: <LinkedInIcon />,
     description: (
       <p>
-        The best service for Instagram toson on the market! You can try it for
-        free which is awesome. I recommend it to everyone. Customer support is
-        really fast and very professional.
+        The best service for Instagram currently on the market! You can try it
+        for free which is awesome since I was sceptical at first. I recommend it
+        to everyone. Customer support is really professional.
       </p>
     ),
     category: "Others", // Category not clearly defined
@@ -354,7 +353,7 @@ const TESTIMONIALS = [
     avatar: "/images/testimonials/Emillia.png",
     full_name: "Emillia",
     username: "",
-    socialIcon: <InstagramIcon />,
+    socialIcon: <TrustPilot />,
     description: (
       <p>
         Very good to get more followers. However it depends on profile.. for
@@ -367,7 +366,7 @@ const TESTIMONIALS = [
     avatar: "/images/testimonials/Peter L..png",
     full_name: "Peter L.",
     username: "",
-    socialIcon: <InstagramIcon />,
+    socialIcon: <TrustPilot />,
     description: (
       <p>
         I used Sprouty in the past for my fitness account and now I'm using it
@@ -382,7 +381,7 @@ const TESTIMONIALS = [
     avatar: "/images/testimonials/Cockerry Pocket Coffee.png",
     full_name: "Cockerry Pocket Coffee",
     username: "@pockychocospaniel",
-    socialIcon: <TwitterIcon />,
+    socialIcon: <InstagramIcon />,
     description: (
       <p>
         I've started with 7 followers and after a month my happy Cocker is at
@@ -471,7 +470,9 @@ export default function Testimonials() {
             !showMore && "max-h-[1200px] overflow-hidden"
           } relative`}
         >
-          {!showMore && <div className="absolute bottom-0 left-0 w-full min-h-[300px] _bg-white/70 bg-gradient-to-t from-[#F9F9FA] via-white/70 pointer-events-none"></div>}
+          {!showMore && (
+            <div className="absolute bottom-0 left-0 w-full min-h-[300px] _bg-white/70 bg-gradient-to-t from-[#F9F9FA] via-white/70 pointer-events-none"></div>
+          )}
 
           {TESTIMONIALS.filter((item) => {
             if (selectedCatg === "All") {
