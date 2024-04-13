@@ -7,7 +7,7 @@ import EarnMoneyCard from "../../components/EarnMoneyCard";
 
 export default function BentoGridCompt() {
   return (
-    <div className="_-mt-16 mt-10 md:mt-20 xl:-mt-16 2xl:-mt-40 font-inter">
+    <div className="_-mt-16 mt-10 md:mt-20 xl:-mt-16 2xl:-mt-40 font-inter px-4">
       {/* <div className="max-w-5xl mx-auto text-center mt-20 pb-4 px-4">
         <div className="text-[30px] md:text-[32px] lg:text-[48px] leading-8 lg:leading-[70px] text-center font-bold max-w-[940px] mx-auto mb-8">
           Loved by
