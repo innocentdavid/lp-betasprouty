@@ -59,9 +59,9 @@ export default function Footer() {
               <a href="https://blog.sproutysocial.com" className="">Blog</a>
               <p className="">Contact Us</p>
               <p className="">Press Kit</p>
-              <p className="">
+              {/* <p className="">
                 Careers <span className="text-blue-500">— We're hiring</span>
-              </p>
+              </p> */}
               <a href="https://sproutysocial.getrewardful.com/signup" className="">
                 Affiliate <span className="text-blue-500">— Earn 25%</span>
               </a>
@@ -82,7 +82,7 @@ export default function Footer() {
               <p className="">Path Social Alternative</p>
               <p className="">Nitreo Alternative</p>
               <p className="">SocialBoost Alternative</p>
-              <p className="">View all comparisons</p>
+              <p className="font-medium">View all comparisons</p>
             </div>
           </div>
 
@@ -92,12 +92,7 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-col gap-4">
-              <p className="">Real-Time Instagram</p>
-              <p className="">
-                Post Preview{" "}
-                <span className="text-blue-500">— Coming Soon</span>
-              </p>
-              <p className="">Fake Followers Checker on Instagram</p>
+              <a href="https://app.sproutysocial.com" className="">Fake Followers Checker on Instagram</a>
               <p className="">Instagram Profile Report</p>
               <p className="">Instagram Caption Generator</p>
             </div>
