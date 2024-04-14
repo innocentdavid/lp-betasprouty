@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 import BentoGridCompt from "./homepageComponents/BentoGrid";
 import Pricing from "./homepageComponents/Pricing";
 import CTA from "./homepageComponents/CTA";
-import { SparklesPreview } from "../components/ui/sparkles-2-bg";
+// import { SparklesPreview } from "../components/ui/sparkles-2-bg";
 import { Helmet } from "react-helmet";
 // import { AuroraBackground } from "../components/ui/aurora-background";
 // import AnimatedCard from "../components/animatedCard";
@@ -50,7 +50,7 @@ function Hero() {
   return (
     <div className="">
       {/* <AuroraBackground> */}
-      <SparklesPreview>
+      {/* <SparklesPreview> */}
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -59,10 +59,10 @@ function Hero() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="relative flex flex-col gap-4 items-center justify-center px-4 pt-20 text-white _bg-gray-800 _pb-6"
+          className="relative flex flex-col gap-4 items-center justify-center px-4 pt-20 _text-white text-black h-screen md:pb-0 xl:pb-20 2xl:pb-40 _bg-gray-800 _pb-6"
         >
           <div className="max-w-5xl mx-auto text-center">
-            <h1 className="group hero-h1-gradient _text-left sm:text-center whitespace-pre-wrap bg-clip-text text-transparent bg-gray-900 text-5xl _font-bold tracking-[-1.5px] sm:tracking-[-2px] _text-gray-900 sm:text-[45px] md:text-[50px] lg:text-[61px] leading-[39px] sm:leading-[65px] font-dashboard text-white">
+            <h1 className="group hero-h1-gradient _text-left sm:text-center whitespace-pre-wrap bg-clip-text text-transparent bg-gray-900 text-5xl _font-bold tracking-[-1.5px] sm:tracking-[-2px] _text-gray-900 sm:text-[45px] md:text-[50px] lg:text-[61px] leading-[39px] sm:leading-[65px] font-dashboard _text-white">
               <span className="mr-2 sm:mr-0 font-black text-[34px] md:text-[48px] lg:text-[84px] lg:leading-[90px]">
                 Grow your Instagram
               </span>
@@ -334,8 +334,8 @@ function Hero() {
           </div>
         </motion.div>
 
-        <div className="absolute bottom-0 left-0 w-full md:min-h-10 lg:min-h-2 xl:min-h-10 bg-gradient-to-t from-[#F9F9FA]"></div>
-      </SparklesPreview>
+        {/* <div className="absolute bottom-0 left-0 w-full md:min-h-10 lg:min-h-2 xl:min-h-10 bg-gradient-to-t from-[#F9F9FA]"></div> */}
+      {/* </SparklesPreview> */}
       {/* </AuroraBackground> */}
 
       <BentoGridCompt />
