@@ -200,7 +200,7 @@ const SkeletonFour = () => {
     >
       <motion.div
         variants={first}
-        className="h-[calc(100%-40px)] my-auto w-1/3 _rounded-2xl bg-white p-4 border border-[#79849A] flex flex-col items-center justify-center rounded-xl shadow-lg"
+        className="h-[calc(100%-40px)] my-auto w-full md:w-1/3 _rounded-2xl bg-white p-4 border border-[#79849A] flex flex-col items-center justify-center rounded-xl shadow-lg"
         style={{
           border: "2px solid #EEF0F1",
           // boxShadow: `
@@ -234,7 +234,7 @@ const SkeletonFour = () => {
       </motion.div>
 
       <motion.div
-        className="h-[fit-content] relative z-20 w-1/3 _rounded-2xl bg-white py-[20.4px] px-[15.6px] border border-[#79849A] flex flex-col items-center justify-center rounded-xl shadow-lg"
+        className="h-[fit-content] relative z-20 w-full md:w-1/3 _rounded-2xl bg-white py-[20.4px] px-[15.6px] border border-[#79849A] flex flex-col items-center justify-center rounded-xl shadow-lg"
         style={{
           border: "2px solid #EEF0F1",
           // boxShadow: `
@@ -305,7 +305,7 @@ const SkeletonFour = () => {
 
       <motion.div
         variants={second}
-        className="h-[calc(100%-40px)] my-auto w-1/3 _rounded-2xl bg-white p-4 border border-[#79849A] flex flex-col items-center justify-center rounded-xl shadow-lg"
+        className="hidden h-[calc(100%-40px)] my-auto w-1/3 _rounded-2xl bg-white p-4 border border-[#79849A] md:flex flex-col items-center justify-center rounded-xl shadow-lg"
         style={{
           border: "2px solid #EEF0F1",
           // boxShadow: `

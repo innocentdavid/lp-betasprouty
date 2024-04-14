@@ -204,98 +204,100 @@ export default function VideoTestimonials() {
         </div>
       </div>
 
-      <motion.div
-        layout
-        className="mt-16 flex xl:justify-center gap-4 px-3 md:px-12 w-full overflow-x-auto no-scrollbar min-w-[375px] max-w-[375px] md:min-w-[unset] md:max-w-[unset]"
-        id="scrollContainer"
-        ref={sliderRef}
-      >
-        {VIDEO_TESTIMONIALS.map((Vtestimonial, index) => {
-          return (
-            <div
-              className="p-1 rounded-[12px] cursor-pointer group"
-              style={{
-                backgroundColor: Vtestimonial.borderColor,
-              }}
-              onClick={() => {
-                setVideoUrl(Vtestimonial.videoUrl);
-                document.body.style.overflow = "hidden";
-              }}
-            >
-              <motion.div
-                layout
-                key={`V_testimonial-${index + 1}`}
-                className="relative min-h-[400px] md:min-h-[568px] _bg-[url(/images/vt-1.png)] bg-cover bg-center bg-no-repeat rounded-[12px] min-w-[280px] md:min-w-[320px] lg:max-w-[500px] font-dashboard"
+      <div className="w-full overflow-auto no-scrollbar">
+        <motion.div
+          layout
+          className="mt-16 flex xl:justify-center gap-4 px-3 md:px-12 w-full overflow-x-auto no-scrollbar min-w-[375px] max-w-[375px] md:min-w-[unset] md:max-w-[unset]"
+          id="scrollContainer"
+          ref={sliderRef}
+        >
+          {VIDEO_TESTIMONIALS.map((Vtestimonial, index) => {
+            return (
+              <div
+                className="p-1 rounded-[12px] cursor-pointer group"
                 style={{
-                  backgroundImage: `url(${Vtestimonial.bg})`,
+                  backgroundColor: Vtestimonial.borderColor,
+                }}
+                onClick={() => {
+                  setVideoUrl(Vtestimonial.videoUrl);
+                  document.body.style.overflow = "hidden";
                 }}
               >
-                <div className="flex items-center gap-2 justify-between py-[17px] px-[16px] bg-gradient-to-b from-black text-white rounded-t-[12px]">
-                  <div className="flex items-center gap-2">
-                    <img
-                      src={Vtestimonial.playIcon}
-                      loading="lazy"
-                      alt=""
-                      width={40}
-                      height={40}
-                      className="w-10 h-10 rounded-full"
-                    />
-
-                    <div className="">
-                      <div className="font-bold text-base font-dashboard">
-                        {Vtestimonial.fullName}
-                      </div>
-                      <div className="font-bold text-sm font-dashboard">
-                        @{Vtestimonial.username}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    className="rounded-[8px] py-1 px-2 text-[13px] font-semibold font-dashboard"
-                    style={{
-                      backgroundColor: Vtestimonial.borderColor,
-                    }}
-                  >
-                    {Vtestimonial.followers} Followers
-                  </div>
-                </div>
-                <div
-                  className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 cursor-pointer _group"
-                  onClick={() => {
-                    setVideoUrl(Vtestimonial.videoUrl);
-                    document.body.style.overflow = "hidden";
+                <motion.div
+                  layout
+                  key={`V_testimonial-${index + 1}`}
+                  className="relative min-h-[400px] md:min-h-[568px] _bg-[url(/images/vt-1.png)] bg-cover bg-center bg-no-repeat rounded-[12px] min-w-[280px] md:min-w-[320px] lg:max-w-[500px] font-dashboard"
+                  style={{
+                    backgroundImage: `url(${Vtestimonial.bg})`,
                   }}
                 >
-                  <div className="relative">
-                    <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-[1]">
-                      <svg
-                        className="group-hover:scale-125 transition-all duration-300"
-                        width="70"
-                        height="70"
-                        viewBox="0 0 70 70"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g opacity="0.9">
-                          <path
-                            d="M35 63C50.464 63 63 50.464 63 35C63 19.536 50.464 7 35 7C19.536 7 7 19.536 7 35C7 50.464 19.536 63 35 63Z"
-                            fill="white"
-                          />
-                          <path
-                            d="M43.4004 35L29.4004 25.2V44.8L43.4004 35Z"
-                            fill={Vtestimonial.borderColor}
-                          />
-                        </g>
-                      </svg>
+                  <div className="flex items-center gap-2 justify-between py-[17px] px-[16px] bg-gradient-to-b from-black text-white rounded-t-[12px]">
+                    <div className="flex items-center gap-2">
+                      <img
+                        src={Vtestimonial.playIcon}
+                        loading="lazy"
+                        alt=""
+                        width={40}
+                        height={40}
+                        className="w-10 h-10 rounded-full"
+                      />
+
+                      <div className="">
+                        <div className="font-bold text-sm md:text-base font-dashboard">
+                          {Vtestimonial.fullName}
+                        </div>
+                        <div className="font-bold text-xs md:text-sm font-dashboard">
+                          @{Vtestimonial.username}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      className="rounded-[8px] py-1 px-2 text-[10px] md:text-[13px] font-semibold font-dashboard whitespace-nowrap w-fit"
+                      style={{
+                        backgroundColor: Vtestimonial.borderColor,
+                      }}
+                    >
+                      {Vtestimonial.followers} Followers
                     </div>
                   </div>
-                </div>
-              </motion.div>
-            </div>
-          );
-        })}
-      </motion.div>
+                  <div
+                    className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 cursor-pointer _group"
+                    onClick={() => {
+                      setVideoUrl(Vtestimonial.videoUrl);
+                      document.body.style.overflow = "hidden";
+                    }}
+                  >
+                    <div className="relative">
+                      <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-[1]">
+                        <svg
+                          className="group-hover:scale-125 transition-all duration-300"
+                          width="70"
+                          height="70"
+                          viewBox="0 0 70 70"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g opacity="0.9">
+                            <path
+                              d="M35 63C50.464 63 63 50.464 63 35C63 19.536 50.464 7 35 7C19.536 7 7 19.536 7 35C7 50.464 19.536 63 35 63Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M43.4004 35L29.4004 25.2V44.8L43.4004 35Z"
+                              fill={Vtestimonial.borderColor}
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            );
+          })}
+        </motion.div>
+      </div>
 
       <div className="lg:hidden flex justify-between items-center px-3 py-4">
         <div className="md:hidden flex items-center gap-2">
