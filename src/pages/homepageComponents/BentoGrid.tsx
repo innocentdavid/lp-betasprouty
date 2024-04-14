@@ -377,7 +377,7 @@ const SkeletonFive = () => {
         className="flex flex-row rounded-2xl _rounded-xl shadow-lg border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
       >
         <img
-          src="/public/images/bentoGrid/morganstewart.png"
+          src="/images/bentoGrid/morganstewart.png"
           loading="lazy"
           alt="avatar"
           height="100"
@@ -460,7 +460,7 @@ const SkeletonFive = () => {
 //         className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black mt-10"
 //       >
 //         <img
-//           src="/public/images/bentoGrid/morganstewart.png"
+//           src="/images/bentoGrid/morganstewart.png"
 //           loading="lazy"
 //           alt="avatar"
 //           height={32}

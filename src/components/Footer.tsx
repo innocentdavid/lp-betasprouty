@@ -14,7 +14,7 @@ export default function Footer() {
             height="40"
             decoding="async"
             data-nimg="1"
-            className="inline-block w-[fit-content] h-10 text-transparent"
+            className="inline-block w-fit max-w-[200px] h-10 text-transparent"
             src="/logo-light-long.png"
           />
 
