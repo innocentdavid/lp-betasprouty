@@ -471,7 +471,7 @@ export default function Testimonials() {
           } relative`}
         >
           {!showMore && (
-            <div className="absolute bottom-0 left-0 w-full min-h-[300px] _bg-white/70 bg-gradient-to-t from-[#F9F9FA] via-white/70 pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 w-full min-h-[100px] md:min-h-[300px] _bg-white/70 bg-gradient-to-t from-[#F9F9FA] via-white/70 pointer-events-none"></div>
           )}
 
           {TESTIMONIALS.filter((item) => {
