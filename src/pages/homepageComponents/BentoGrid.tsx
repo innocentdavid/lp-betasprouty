@@ -73,6 +73,7 @@ export function BentoGridThirdDemo() {
 //     <motion.div
 //       initial="initial"
 //       whileHover="animate"
+// whileTap="animate"
 //       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2 relative z-50"
 //     >
 //       <motion.div
@@ -370,11 +371,12 @@ const SkeletonFive = () => {
     <motion.div
       initial="initial"
       whileHover="animate"
+      whileTap="animate"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
       <motion.div
         variants={variants}
-        className="flex flex-row rounded-2xl _rounded-xl shadow-lg border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+        className="flex flex-row rounded-2xl _rounded-xl shadow-lg border border-neutral-100 dark:border-white/[0.2] p-2 items-start space-x-2 bg-white dark:bg-black"
       >
         <img
           src="/images/bentoGrid/morganstewart.png"
@@ -453,6 +455,7 @@ const SkeletonFive = () => {
 //     <motion.div
 //       initial="initial"
 //       whileHover="animate"
+// whileTap="animate"
 //       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
 //     >
 //       <motion.div

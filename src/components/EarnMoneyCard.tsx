@@ -49,6 +49,7 @@ const SkeletonTwo = () => {
     <motion.div
       initial="initial"
       whileHover="animate"
+      whileTap="animate"
       className="h-full w-full relative flex flex-col justify-between"
       onHoverStart={() => {
         //zIndexSet1('z-20');

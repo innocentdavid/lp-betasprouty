@@ -41,11 +41,22 @@ const SkeletonOne = () => {
     <motion.div
       initial="initial"
       whileHover="animate"
+      whileTap="animate"
       className="w-full relative h-full flex flex-col justify-between"
       onHoverStart={() => {
         setColorFlip("text-[rgba(255,_0,_0,_0.5)] border-[rgba(255,_0,_0,_0.5)]");
         zIndexSet1("z-20");
         setLabelText("Without Sprouty");
+      }}
+      onTapStart={() => {
+        setColorFlip("text-[rgba(255,_0,_0,_0.5)] border-[rgba(255,_0,_0,_0.5)]");
+        zIndexSet1("z-20");
+        setLabelText("Without Sprouty");
+      }}
+      onTapCancel={() => {
+        setColorFlip("text-sky-500 border-sky-500");
+        zIndexSet1("z-10");
+        setLabelText("With Sprouty");
       }}
       onHoverEnd={() => {
         setColorFlip("text-sky-500 border-sky-500");
