@@ -189,7 +189,7 @@ export default function Pricing() {
               </a>
             </div>
 
-            <p className="mt-1 text-gray-500">Cancel anytime, no risk</p>
+            <p className="mt-1 text-gray-500 text-sm md:text-base">Cancel anytime, no risk</p>
           </div>
         </div>
       </div>
