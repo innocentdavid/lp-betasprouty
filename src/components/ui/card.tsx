@@ -15,7 +15,7 @@ const Card = ({
   valueStyle?: string;
 }) => {
   return (
-    <div className="flex-1 font-dashboard">
+    <div className="flex-1">
       <div className="flex w-[85%] xl:w-full mx-auto p-[14px] bg-white border-zinc-200 border _rounded-[12px] rounded-xl shadow-lg">
         {/* First Side */}
         <img
@@ -43,7 +43,7 @@ const Card = ({
         <div className="p-1 text-left">
           <p
             className={
-              (valueStyle ? valueStyle : "bg-blue-500 text-white") +
+              (valueStyle ? valueStyle : "bg-[#0E9F6E] text-white") +
               " text-[14px] xl:text-base font-bold py-2 text-center rounded min-w-20 xl:min-w-[100px]"
             }
           >

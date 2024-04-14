@@ -211,8 +211,8 @@ const SkeletonFour = () => {
           // #79849a 0px 8px 46px -6px
           // `,
           // boxShadow: `
-          //   rgba(121, 132, 154, 0.8) 0px 8px 20px -6px, 
-          //   rgba(121, 132, 154, 0.6) 0px 1px 4px -1px, 
+          //   rgba(121, 132, 154, 0.8) 0px 8px 20px -6px,
+          //   rgba(121, 132, 154, 0.6) 0px 1px 4px -1px,
           //   rgba(121, 132, 154, 0.6) 0px 0px 2px 0px,
           //   rgba(121, 132, 154, 0.6) 0px 4px 10px -4px,
           //   rgba(121, 132, 154, 0.6) 0px 8px 46px -6px
@@ -238,15 +238,15 @@ const SkeletonFour = () => {
         style={{
           border: "2px solid #EEF0F1",
           // boxShadow: `
-          // #79849acc 0px 8px 20px -6px, 
-          // #79849a99 0px 1px 4px -1px, 
+          // #79849acc 0px 8px 20px -6px,
+          // #79849a99 0px 1px 4px -1px,
           // #79849a99 0px 0px 2px 0px,
           // rgba(0, 0, 0, 0.25) 0px 4px 4px 0px
           // `,
           // boxShadow: `
-          // rgba(121, 132, 154, 0.8) 0px 8px 20px -6px, 
-          // rgba(121, 132, 154, 0.6) 0px 1px 4px -1px, 
-          // rgba(121, 132, 154, 0.6) 0px 0px 2px 0px, 
+          // rgba(121, 132, 154, 0.8) 0px 8px 20px -6px,
+          // rgba(121, 132, 154, 0.6) 0px 1px 4px -1px,
+          // rgba(121, 132, 154, 0.6) 0px 0px 2px 0px,
           // rgba(0, 0, 0, 0.25) 0px 4px 4px 0px
           // `
         }}
@@ -316,8 +316,8 @@ const SkeletonFour = () => {
           // #79849a 0px 8px 46px -6px
           // `,
           // boxShadow: `
-          //   rgba(121, 132, 154, 0.8) 0px 8px 20px -6px, 
-          //   rgba(121, 132, 154, 0.6) 0px 1px 4px -1px, 
+          //   rgba(121, 132, 154, 0.8) 0px 8px 20px -6px,
+          //   rgba(121, 132, 154, 0.6) 0px 1px 4px -1px,
           //   rgba(121, 132, 154, 0.6) 0px 0px 2px 0px,
           //   rgba(121, 132, 154, 0.6) 0px 4px 10px -4px,
           //   rgba(121, 132, 154, 0.6) 0px 8px 46px -6px
@@ -394,7 +394,7 @@ const SkeletonFive = () => {
         variants={variantsSecond}
         className="flex flex-row rounded-full _rounded-xl shadow-lg border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
       >
-        <p className="text-xs text-neutral-500">
+        <p className="text-xs text-neutral-500 pl-4">
           Try to recreate your reel you have uploaded on 21st of Feb.
         </p>
 
@@ -540,7 +540,7 @@ const items = [
     // title: "Earn Money",
     // description: (
     //   <span className="text-sm">
-    //     Get paid for promotions or advertise your business with Instagram!
+    //     Get paid for promotions and advertise your business.
     //   </span>
     // ),
     header: <EarnMoneyCard />,
@@ -549,10 +549,10 @@ const items = [
     icon: "",
   },
   {
-    title: "Sentiment Analysis",
+    title: "Reach Targeted Audience",
     description: (
       <span className="text-sm">
-        Understand the sentiment of your text with AI analysis.
+        Reach new, loyal followers in your preferred niche or location.
       </span>
     ),
     header: <SkeletonFour />,

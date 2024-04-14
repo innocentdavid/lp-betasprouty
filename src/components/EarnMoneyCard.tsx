@@ -98,7 +98,7 @@ const SkeletonTwo = () => {
           Earn Money
         </h4>
         <p className="font-normal text-neutral-600 dark:text-neutral-300">
-          Get paid for promotions or advertise your business with.
+        Get paid for promotions and advertise your business.
         </p>
       </motion.div>
     </motion.div>

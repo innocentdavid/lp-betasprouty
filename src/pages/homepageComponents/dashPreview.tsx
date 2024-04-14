@@ -193,10 +193,10 @@ export default function DashPreview() {
 
           <div className="flex flex-col items-center gap-[64px] flex-nowrap h-[min-content] justify-center overflow-visible relative w-[min-content]">
             <div className="md:max-w-5xl md:mx-auto text-center pb-4 px-4 md:px-10 font-dashboard">
-              <div className="text-[30px] md:text-[32px] lg:text-5xl leading-8 font-dashboard text-center font-bold max-w-[940px] mx-auto _mb-8 text-white">
+              <div className="text-[30px] md:text-[32px] lg:text-5xl leading-8 font-dashboard text-center font-bold max-w-[940px] mx-auto _mb-8 _text-white bg-gradient-to-r from-white to-[#FFD9D9] text-transparent bg-clip-text">
                 Our magic formula for Instagram Growth
               </div>
-              <p className="mt-4 mb-2 sm:mb-0 _sm:mt-6 sm:text-[21px] text-xl font-medium sm:leading-[32px] leading-snug text-white _text-left sm:text-center">
+              <p className="mt-4 mb-2 sm:mb-0 _sm:mt-6 sm:text-[21px] text-xl font-medium sm:leading-[32px] leading-snug _text-white _text-left sm:text-center bg-gradient-to-r from-white to-[#FFD9D9] text-transparent bg-clip-text">
                 Loaded with new features to quickly get genuine users to your
                 Instagram.
               </p>

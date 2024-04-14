@@ -41,9 +41,9 @@ export default function Footer() {
               <p className="">Instagram Growth Service</p>
               <p className="">Instagram Real Followers</p>
               <p className="">Instagram Real Engagement</p>
-              <p className="">
+              {/* <p className="">
                 Perks & Discounts <span className="text-blue-500">— New</span>
-              </p>
+              </p> */}
             </div>
           </div>
 
