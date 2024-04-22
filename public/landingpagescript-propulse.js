@@ -172,7 +172,7 @@ window.addEventListener("DOMContentLoaded", () => {
                           <img
                             alt=""
                             class="lg:hidden platform-logo"
-                            src="https://app.SproutySocial.com/instagram.svg"
+                            src="https://app.SproutySocial.com/icons/instagram.svg"
                             width="16px"
                             height="16px"
                           />
