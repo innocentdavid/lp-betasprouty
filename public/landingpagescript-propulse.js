@@ -1,302 +1,292 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 window.addEventListener("DOMContentLoaded", () => {
-  let body = document.querySelector(".body-2");
-  body
+  let bodyEl = document.querySelector(".body-2");
+  bodyEl
     ? console.log("body-2 was found!")
     : console.log("body-2 was not found!");
-    
-  if (body) {
-    body.innerHTML = `
-<script src="https://cdn.tailwindcss.com"></script>
-<div class="wrapper-3">
-      <!-- gys -->
-      <div id="dash-preview" class="p-[6.9375rem_1rem_2rem]">
-        <div
-          class="py-5 px-2 lg:px-5 max-w-[1126px] mx-auto font-MontserratRegular"
-        >
-          <div
-            class="rounded-[14px] shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] overflow-hidden"
-          >
-            <div id="header" class="bg-black text-[#F2F4F7] py-[15px]">
-              <div
-                id="gys"
-                class="w-full max-w-[160px] md:max-w-[265px] px-[12px] md:px-[32px] flex items-center gap-3"
-              >
-                <img
-                  src="https://app.propulse.me/logo.png"
-                  loading="lazy"
-                  sizes="(max-width: 767px) 100vw, 265px"
-                  srcset="https://app.propulse.me/logo.png 1500w"
-                  alt="Sprouty Social Logo, ball with rocket in S"
-                  class="hidden md:block"
-                />
-                <img
-                  src="https://app.propulse.me/logo.png"
-                  loading="lazy"
-                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 150px, 100vw"
-                  srcset="https://app.propulse.me/logo.png 1500w"
-                  alt="rocket with S in a ball"
-                  class="md:hidden w-12 h-auto"
-                />
-                <b class="text-[32px]">Propulse</b>
-              </div>
-            </div>
 
-            <div class="px-4 md:px-0 bg-[#0D0E10] text-white">
+  if (bodyEl) {
+        bodyEl.innerHTML = `
+    <script src="https://cdn.tailwindcss.com"></script>
+    <div class="wrapper-3">
+          <!-- gys -->
+          <div id="dash-preview" class="p-[6.9375rem_1rem_2rem]">
+            <div
+              class="py-5 px-2 lg:px-5 max-w-[1126px] mx-auto font-MontserratRegular"
+            >
               <div
-                class="w-full flex flex-col gap-4 md:gap-0 md:flex-row justify-center md:justify-between items-center px-4 md:px-10 py-5 mb-10 shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.02)]"
+                class="rounded-[14px] shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] overflow-hidden"
               >
-                <div
-                  class="font-[600] text-base lg:text-2xl text-center md:text-start"
-                >
-                  Précision de croissance pour
-                  <span
-                    class="font-normal bg-[linear-gradient(90deg,_#b16cea_20%,_#ff5e69_60%,_#ff8a56_80%,_#ffa84b)] text-transparent bg-clip-text"
-                    id="username1"
-                  >
-                    <!-- @${user.username} -->
-                  </span>
-                </div>
-
-                <div
-                  class="relative bg-black text-[[#F9F9FB]] text-white rounded-md p-[13px] text-lg font-bold"
-                >
+                <div id="header" class="bg-black text-[#F2F4F7] py-[15px]">
                   <div
-                    class="flex items-center justify-center cursor-pointer text-[600]"
-                    onclick="chartRangetoggleDropdown()"
+                    id="gys"
+                    class="w-full max-w-[160px] md:max-w-[265px] px-[12px] md:px-[32px] flex items-center gap-3"
                   >
-                    <span
-                      class="p-0 flex items-center bg-[linear-gradient(90deg,_#b16cea_20%,_#ff5e69_60%,_#ff8a56_80%,_#ffa84b)] text-transparent bg-clip-text"
-                      id="selectedRange"
-                      >Voir mensuellement</span
-                    >
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 320 512"
-                      class="w-[16px] h-auto"
-                      height="14px"
-                      width="16px"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"
-                      ></path>
-                    </svg>
-                  </div>
-
-                  <!-- modal -->
-                  <div
-                    class="chartRangeDropdown absolute w-full min-w-[250px] top-full -left-16 rounded-[10px] z-[2] text-white bg-black opacity-0 pointer-events-none"
-                    style="
-                      box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 3px;
-                      transition: opacity 0.15s ease-in 0s;
-                    "
-                  >
-                    <div
-                      class="py-4 px-[30px] hover:bg-[#f8f8f8] bg-[linear-gradient(90deg,_#b16cea_20%,_#ff5e69_60%,_#ff8a56_80%,_#ffa84b)] hover:text-transparent bg-clip-text cursor-pointer whitespace-nowrap"
-                      onclick="toggleChartRangeDropdown('Monthly')"
-                      id="Monthly"
-                    >
-                    Voir mensuellement
-                    </div>
-                    <div
-                      class="py-4 px-[30px] hover:bg-[#f8f8f8] bg-[linear-gradient(90deg,_#b16cea_20%,_#ff5e69_60%,_#ff8a56_80%,_#ffa84b)] hover:text-transparent bg-clip-text cursor-pointer whitespace-nowrap"
-                      onclick="toggleChartRangeDropdown('Weekly')"
-                      id="Weekly"
-                    >
-                    Voir hebdomadaire
-                    </div>
-                    <div
-                      class="py-4 px-[30px] hover:bg-[#f8f8f8] bg-[linear-gradient(90deg,_#b16cea_20%,_#ff5e69_60%,_#ff8a56_80%,_#ffa84b)] hover:text-transparent bg-clip-text cursor-pointer whitespace-nowrap"
-                      onclick="toggleChartRangeDropdown('Daily')"
-                      id="Daily"
-                    >
-                    Voir quotidiennement
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="flex flex-col lg:flex-row items-center justify-between gap-[25px] md:px-10 mt-[35px]"
-              >
-                <!-- user -->
-                <div
-                  class="flex flex-col md:flex-row justify-center md:justify-start items-center rounded-xl bg-black text-[#F9F9FB] md:h-[124px] px-5 md:pl-5 md:pr-16 py-[13px] w-full md:w-fit"
-                >
-                  <!-- image -->
-                  <div class="relative mr-[12px] lg:mr-[20px]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="98"
-                      height="98"
-                      viewBox="0 0 98 98"
-                      fill="none"
-                      class="w-[70px] md:w-[98px] h-[70px] md:h-[98px]"
-                    >
-                      <circle
-                        cx="49"
-                        cy="49"
-                        r="48.0257"
-                        stroke="url(#paint0_linear_114_1660)"
-                        stroke-width="1.94861"
-                      />
-                      <defs>
-                        <linearGradient
-                          id="paint0_linear_114_1660"
-                          x1="108.316"
-                          y1="10.3158"
-                          x2="2.76691e-06"
-                          y2="76.079"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stop-color="#C913B9" />
-                          <stop offset="0.500947" stop-color="#F9373F" />
-                          <stop offset="1" stop-color="#FECD00" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-
                     <img
-                      class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[60px] h-[60px] md:w-[80px] md:h-[80px] rounded-full"
-                      src=""
-                      id="profile_pic_url"
-                      alt="user-dp"
+                      src="https://app.propulse.me/logo.png"
+                      loading="lazy"
+                      sizes="(max-width: 767px) 100vw, 265px"
+                      srcset="https://app.propulse.me/logo.png 1500w"
+                      alt="Sprouty Social Logo, ball with rocket in S"
+                      class="hidden md:block"
                     />
-                  </div>
-
-                  <!-- details -->
-                  <div
-                    class="flex flex-col text-center md:text-start mt-5 md:mt-0"
-                  >
-                    <div
-                      class="flex justify-center md:justify-start items-center gap-1 text-base lg:text-[20px] font-[500]"
-                    >
-                      <span id="full_name"><!-- ${user.full_name} --></span>
-                      <img
-                        alt=""
-                        class="lg:hidden platform-logo"
-                        src="https://app.SproutySocial.com/instagram.svg"
-                        width="16px"
-                        height="16px"
-                      />
-                    </div>
-                    <div
-                      class="mt-[6px] mb-3 text-[14px] leading-[16.8px] font-semibold text-[#5A6387]"
-                      id="username"
-                    >
-                      <!-- @${user.username} -->
-                    </div>
-                    <div class="flex items-center">
-                      <div
-                        class="text-[14px] leading-[15.6px] tracking-[0.52px] flex whitespace-nowrap font-bold bg-[linear-gradient(90deg,_#b16cea_20%,_#ff5e69_60%,_#ff8a56_80%,_#ffa84b)] text-transparent bg-clip-text uppercase"
-                      >
-                      Avec Propulse
-                      </div>
-                    </div>
+                    <img
+                      src="https://app.propulse.me/logo.png"
+                      loading="lazy"
+                      sizes="(max-width: 479px) 100vw, (max-width: 767px) 150px, 100vw"
+                      srcset="https://app.propulse.me/logo.png 1500w"
+                      alt="rocket with S in a ball"
+                      class="md:hidden w-12 h-auto"
+                    />
+                    <b class="text-[32px]">Propulse</b>
                   </div>
                 </div>
-
-                <!-- stats -->
-                <div
-                  class="flex flex-row items-center justify-center gap-[15px] w-full"
-                >
+                <div class="px-4 md:px-0 bg-[#0D0E10] text-white">
                   <div
-                    class="flex-1 py-3 md:py-0 md:min-w-[150px] max-w-[190px] bg-black text-white md:h-[124px] rounded-xl overflow-hidden flex flex-col justify-center items-center"
+                    class="w-full flex flex-col gap-4 md:gap-0 md:flex-row justify-center md:justify-between items-center px-4 md:px-10 py-5 mb-10 shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.02)]"
                   >
                     <div
-                      class="text-[12px] md:text-[14px] lg:text-[16px] leading-[11px] font-[600] false text-center"
+                      class="font-[600] text-base lg:text-2xl text-center md:text-start"
                     >
-                      Followers
+                      Précision de croissance pour
+                      <span
+                        class="font-normal bg-[linear-gradient(90deg,_#b16cea_20%,_#ff5e69_60%,_#ff8a56_80%,_#ffa84b)] text-transparent bg-clip-text"
+                        id="username1"
+                      >
+                        <!-- @${user.username} -->
+                      </span>
                     </div>
                     <div
-                      class="flex flex-col justify-between items-center text-center relative"
+                      class="relative bg-black text-[[#F9F9FB]] text-white rounded-md p-[13px] text-lg font-bold"
                     >
                       <div
-                        class="text-[24px] lg:text-4xl lg:leading-[38.4px] font-bold mt-2 md:mt-[14px]"
-                        id="follower_count"
+                        class="flex items-center justify-center cursor-pointer text-[600]"
+                        onclick="chartRangetoggleDropdown()"
                       >
-                        <!-- 543 -->
-                        <!-- ${numFormatter(user.follower_count)} -->
-                      </div>
-                      <div
-                        class="absolute lg:static top-[calc(100%-10px)] left-[50%] translate-x-[-50%] py-1 px-2 rounded-[7px] bg-[#c8f7e1] text-[#23df85] mt-1 hidden d-flex items-center gap-1 text-[10px] lg:text-[12px] font-bold font-MontserratBold lg:mr-[-32px] xl:mr-0"
-                      >
-                        123
+                        <span
+                          class="p-0 flex items-center bg-[linear-gradient(90deg,_#b16cea_20%,_#ff5e69_60%,_#ff8a56_80%,_#ffa84b)] text-transparent bg-clip-text"
+                          id="selectedRange"
+                          >Voir mensuellement</span
+                        >
                         <svg
                           stroke="currentColor"
                           fill="currentColor"
                           stroke-width="0"
                           viewBox="0 0 320 512"
-                          color="#F5793A"
-                          height="12"
-                          width="12"
+                          class="w-[16px] h-auto"
+                          height="14px"
+                          width="16px"
                           xmlns="http://www.w3.org/2000/svg"
-                          style="color: rgb(27, 137, 255)"
                         >
                           <path
-                            d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z"
+                            d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"
                           ></path>
                         </svg>
                       </div>
+                      <!-- modal -->
+                      <div
+                        class="chartRangeDropdown absolute w-full min-w-[250px] top-full -left-16 rounded-[10px] z-[2] text-white bg-black opacity-0 pointer-events-none"
+                        style="
+                          box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 3px;
+                          transition: opacity 0.15s ease-in 0s;
+                        "
+                      >
+                        <div
+                          class="py-4 px-[30px] hover:bg-[#f8f8f8] bg-[linear-gradient(90deg,_#b16cea_20%,_#ff5e69_60%,_#ff8a56_80%,_#ffa84b)] hover:text-transparent bg-clip-text cursor-pointer whitespace-nowrap"
+                          onclick="toggleChartRangeDropdown('Monthly')"
+                          id="Monthly"
+                        >
+                        Voir mensuellement
+                        </div>
+                        <div
+                          class="py-4 px-[30px] hover:bg-[#f8f8f8] bg-[linear-gradient(90deg,_#b16cea_20%,_#ff5e69_60%,_#ff8a56_80%,_#ffa84b)] hover:text-transparent bg-clip-text cursor-pointer whitespace-nowrap"
+                          onclick="toggleChartRangeDropdown('Weekly')"
+                          id="Weekly"
+                        >
+                        Voir hebdomadaire
+                        </div>
+                        <div
+                          class="py-4 px-[30px] hover:bg-[#f8f8f8] bg-[linear-gradient(90deg,_#b16cea_20%,_#ff5e69_60%,_#ff8a56_80%,_#ffa84b)] hover:text-transparent bg-clip-text cursor-pointer whitespace-nowrap"
+                          onclick="toggleChartRangeDropdown('Daily')"
+                          id="Daily"
+                        >
+                        Voir quotidiennement
+                        </div>
+                      </div>
                     </div>
                   </div>
-
                   <div
-                    class="flex-1 py-3 md:py-0 md:min-w-[150px] max-w-[190px] bg-[linear-gradient(90deg,_#b16cea_20%,_#ff5e69_60%,_#ff8a56_80%,_#ffa84b)] text-white md:h-[124px] rounded-xl overflow-hidden flex flex-col justify-center items-center"
+                    class="flex flex-col lg:flex-row items-center justify-between gap-[25px] md:px-10 mt-[35px]"
                   >
+                    <!-- user -->
                     <div
-                      class="text-[12px] md:text-[14px] lg:text-[16px] leading-[11px] font-[600] text-center"
+                      class="flex flex-col md:flex-row justify-center md:justify-start items-center rounded-xl bg-black text-[#F9F9FB] md:h-[124px] px-5 md:pl-5 md:pr-16 py-[13px] w-full md:w-fit"
                     >
-                      Avec Nous
+                      <!-- image -->
+                      <div class="relative mr-[12px] lg:mr-[20px]">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="98"
+                          height="98"
+                          viewBox="0 0 98 98"
+                          fill="none"
+                          class="w-[70px] md:w-[98px] h-[70px] md:h-[98px]"
+                        >
+                          <circle
+                            cx="49"
+                            cy="49"
+                            r="48.0257"
+                            stroke="url(#paint0_linear_114_1660)"
+                            stroke-width="1.94861"
+                          />
+                          <defs>
+                            <linearGradient
+                              id="paint0_linear_114_1660"
+                              x1="108.316"
+                              y1="10.3158"
+                              x2="2.76691e-06"
+                              y2="76.079"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#C913B9" />
+                              <stop offset="0.500947" stop-color="#F9373F" />
+                              <stop offset="1" stop-color="#FECD00" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                        <img
+                          class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[60px] h-[60px] md:w-[80px] md:h-[80px] rounded-full"
+                          src=""
+                          id="profile_pic_url"
+                          alt="user-dp"
+                        />
+                      </div>
+                      <!-- details -->
+                      <div
+                        class="flex flex-col text-center md:text-start mt-5 md:mt-0"
+                      >
+                        <div
+                          class="flex justify-center md:justify-start items-center gap-1 text-base lg:text-[20px] font-[500]"
+                        >
+                          <span id="full_name"><!-- ${user.full_name} --></span>
+                          <img
+                            alt=""
+                            class="lg:hidden platform-logo"
+                            src="https://app.SproutySocial.com/instagram.svg"
+                            width="16px"
+                            height="16px"
+                          />
+                        </div>
+                        <div
+                          class="mt-[6px] mb-3 text-[14px] leading-[16.8px] font-semibold text-[#5A6387]"
+                          id="username"
+                        >
+                          <!-- @${user.username} -->
+                        </div>
+                        <div class="flex items-center">
+                          <div
+                            class="text-[14px] leading-[15.6px] tracking-[0.52px] flex whitespace-nowrap font-bold bg-[linear-gradient(90deg,_#b16cea_20%,_#ff5e69_60%,_#ff8a56_80%,_#ffa84b)] text-transparent bg-clip-text uppercase"
+                          >
+                          Avec Propulse
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                    <!-- stats -->
                     <div
-                      class="text-[24px] lg:text-4xl lg:leading-[38.4px] font-bold mt-2 md:mt-[14px]"
-                      id="with_sproutyVal"
+                      class="flex flex-row items-center justify-center gap-[15px] w-full"
                     >
-                      <!-- 543 -->
-                      <!-- ${numFormatter(withSprouty)}${
-      withSprouty >= 1000000 ? "+" : ""
-    } -->
-                    </div>
-                  </div>
-
-                  <div
-                    class="flex-1 py-3 md:py-0 md:min-w-[150px] max-w-[190px] bg-black text-white md:h-[124px] rounded-xl overflow-hidden flex flex-col justify-center items-center"
-                  >
-                    <div
-                      class="text-[12px] md:text-[14px] lg:text-[16px] leading-[11px] font-[600] text-[#333] text-center"
-                    >
-                      Sans Nous
-                    </div>
-                    <div
-                      class="text-[24px] lg:text-4xl lg:leading-[38.4px] font-bold mt-2 md:mt-[14px]"
-                      id="without_sprouty"
-                    >
-                      <!-- 543 -->
-                      <!-- ${numFormatter(withoutSprouty)} -->
+                      <div
+                        class="flex-1 py-3 md:py-0 md:min-w-[150px] max-w-[190px] bg-black text-white md:h-[124px] rounded-xl overflow-hidden flex flex-col justify-center items-center"
+                      >
+                        <div
+                          class="text-[12px] md:text-[14px] lg:text-[16px] leading-[11px] font-[600] false text-center"
+                        >
+                          Followers
+                        </div>
+                        <div
+                          class="flex flex-col justify-between items-center text-center relative"
+                        >
+                          <div
+                            class="text-[24px] lg:text-4xl lg:leading-[38.4px] font-bold mt-2 md:mt-[14px]"
+                            id="follower_count"
+                          >
+                            <!-- 543 -->
+                            <!-- ${numFormatter(user.follower_count)} -->
+                          </div>
+                          <div
+                            class="absolute lg:static top-[calc(100%-10px)] left-[50%] translate-x-[-50%] py-1 px-2 rounded-[7px] bg-[#c8f7e1] text-[#23df85] mt-1 hidden d-flex items-center gap-1 text-[10px] lg:text-[12px] font-bold font-MontserratBold lg:mr-[-32px] xl:mr-0"
+                          >
+                            123
+                            <svg
+                              stroke="currentColor"
+                              fill="currentColor"
+                              stroke-width="0"
+                              viewBox="0 0 320 512"
+                              color="#F5793A"
+                              height="12"
+                              width="12"
+                              xmlns="http://www.w3.org/2000/svg"
+                              style="color: rgb(27, 137, 255)"
+                            >
+                              <path
+                                d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="flex-1 py-3 md:py-0 md:min-w-[150px] max-w-[190px] bg-[linear-gradient(90deg,_#b16cea_20%,_#ff5e69_60%,_#ff8a56_80%,_#ffa84b)] text-white md:h-[124px] rounded-xl overflow-hidden flex flex-col justify-center items-center"
+                      >
+                        <div
+                          class="text-[12px] md:text-[14px] lg:text-[16px] leading-[11px] font-[600] text-center"
+                        >
+                          Avec Nous
+                        </div>
+                        <div
+                          class="text-[24px] lg:text-4xl lg:leading-[38.4px] font-bold mt-2 md:mt-[14px]"
+                          id="with_sproutyVal"
+                        >
+                          <!-- 543 -->
+                          <!-- ${numFormatter(withSprouty)}${
+          withSprouty >= 1000000 ? "+" : ""
+        } -->
+                        </div>
+                      </div>
+                      <div
+                        class="flex-1 py-3 md:py-0 md:min-w-[150px] max-w-[190px] bg-black text-white md:h-[124px] rounded-xl overflow-hidden flex flex-col justify-center items-center"
+                      >
+                        <div
+                          class="text-[12px] md:text-[14px] lg:text-[16px] leading-[11px] font-[600] text-[#333] text-center"
+                        >
+                          Sans Nous
+                        </div>
+                        <div
+                          class="text-[24px] lg:text-4xl lg:leading-[38.4px] font-bold mt-2 md:mt-[14px]"
+                          id="without_sprouty"
+                        >
+                          <!-- 543 -->
+                          <!-- ${numFormatter(withoutSprouty)} -->
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <section class="py-5 lg:px-10 bg-[#0D0E10] _text-white">
+                  <div class="">
+                    <div id="chart1"></div>
+                    <div id="chart2"></div>
+                    <div id="dailyChartEl"></div>
+                  </div>
+                </section>
               </div>
             </div>
-
-            <section class="py-5 lg:px-10 bg-[#0D0E10] _text-white">
-              <div class="">
-                <div id="chart1"></div>
-                <div id="chart2"></div>
-                <div id="dailyChartEl"></div>
-              </div>
-            </section>
+            <script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
+            <!-- <script src="script.js"></script> -->
           </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
-        <!-- <script src="script.js"></script> -->
-      </div>
-    </div>
-    `;
+        `;
   }
 });
 
@@ -911,57 +901,60 @@ function calculatePercentageDifference(num1, num2) {
 
 window.addEventListener("DOMContentLoaded", async () => {
   // return;
-  document.getElementById("dash-preview").classList.add("hidden");
-  const res = await getUserData();
-  if (res?.message === "success") {
-    document.getElementById("dash-preview").classList.remove("hidden");
-    // console.log(res.data);
-    const user = res.data;
-    if (user) {
-      const buttons = document.querySelectorAll(".custom-button-content");
-      buttons.forEach((button) => {
-        button.textContent = `Start Free Trial @${user.username}`;
-      });
-      usercurrentFollowersCount = user.follower_count;
-      var [r1, r2] = generateArrays(usercurrentFollowersCount);
-      // console.log(r1, r2);
-      resultArray1 = r1;
-      resultArray2 = r2;
-      withGYS = getLastItem(r1);
-      withoutGYS = getLastItem(r2);
-      // console.log(calculatePercentageDifference(50, 70));
-      // console.log(calculatePercentageDifference(withGYS, withoutGYS));
-
-      var profile_pic_url = user.profile_pic_url;
-      var full_name = user.full_name;
-      var username = user.username;
-      var follower_count = user.follower_count;
-      var without_GYS = numFormatter(withoutGYS);
-      var with_GYSVal = `${numFormatter(withGYS)}${
-        withGYS >= 1000000 ? "+" : ""
-      }`;
-
-      document.getElementById("profile_pic_url").src = profile_pic_url;
-      document.getElementById("full_name").textContent = full_name;
-      document.getElementById("username").textContent = `@${username}`;
-      document.getElementById("username1").textContent = `@${username}`;
-      document.getElementById("follower_count").textContent = follower_count;
-      document.getElementById("without_sprouty").textContent = without_GYS;
-      document.getElementById("with_sproutyVal").textContent = with_GYSVal;
-
-      const options = renderMonthlyChart();
-      document.querySelector("#chart2").classList.add("hidden");
-      document.querySelector("#chart1").classList.remove("hidden");
-      document.querySelector("#chart1").classList.add("block");
-      const el = document.querySelector("#chart1");
-      if (el) {
-        var chart = new ApexCharts(el, {
-          ...options,
-          grid: {
-            show: true,
-          },
+  const dashPreview = document.getElementById("dash-preview");
+  if (dashPreview) {
+    dashPreview.classList.add("hidden");
+    const res = await getUserData();
+    if (res?.message === "success") {
+      document.getElementById("dash-preview").classList.remove("hidden");
+      // console.log(res.data);
+      const user = res.data;
+      if (user) {
+        const buttons = document.querySelectorAll(".custom-button-content");
+        buttons.forEach((button) => {
+          button.textContent = `Start Free Trial @${user.username}`;
         });
-        chart.render();
+        usercurrentFollowersCount = user.follower_count;
+        var [r1, r2] = generateArrays(usercurrentFollowersCount);
+        // console.log(r1, r2);
+        resultArray1 = r1;
+        resultArray2 = r2;
+        withGYS = getLastItem(r1);
+        withoutGYS = getLastItem(r2);
+        // console.log(calculatePercentageDifference(50, 70));
+        // console.log(calculatePercentageDifference(withGYS, withoutGYS));
+
+        var profile_pic_url = user.profile_pic_url;
+        var full_name = user.full_name;
+        var username = user.username;
+        var follower_count = user.follower_count;
+        var without_GYS = numFormatter(withoutGYS);
+        var with_GYSVal = `${numFormatter(withGYS)}${
+          withGYS >= 1000000 ? "+" : ""
+        }`;
+
+        document.getElementById("profile_pic_url").src = profile_pic_url;
+        document.getElementById("full_name").textContent = full_name;
+        document.getElementById("username").textContent = `@${username}`;
+        document.getElementById("username1").textContent = `@${username}`;
+        document.getElementById("follower_count").textContent = follower_count;
+        document.getElementById("without_sprouty").textContent = without_GYS;
+        document.getElementById("with_sproutyVal").textContent = with_GYSVal;
+
+        const options = renderMonthlyChart();
+        document.querySelector("#chart2").classList.add("hidden");
+        document.querySelector("#chart1").classList.remove("hidden");
+        document.querySelector("#chart1").classList.add("block");
+        const el = document.querySelector("#chart1");
+        if (el) {
+          var chart = new ApexCharts(el, {
+            ...options,
+            grid: {
+              show: true,
+            },
+          });
+          chart.render();
+        }
       }
     }
   }
