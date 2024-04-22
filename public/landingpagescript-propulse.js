@@ -1,7 +1,12 @@
-window.addEventListener("DOMContentLoaded", ()=>{
+/* eslint-disable @typescript-eslint/no-unused-vars */
+window.addEventListener("DOMContentLoaded", () => {
   let body = document.querySelector(".body-2");
-  if(body){
-    body.innerHTML=`
+  body
+    ? console.log("body-2 was found!")
+    : console.log("body-2 was not found!");
+    
+  if (body) {
+    body.innerHTML = `
 <script src="https://cdn.tailwindcss.com"></script>
 <div class="wrapper-3">
       <!-- gys -->
@@ -252,7 +257,9 @@ window.addEventListener("DOMContentLoaded", ()=>{
                       id="with_sproutyVal"
                     >
                       <!-- 543 -->
-                      <!-- ${numFormatter(withSprouty)}${withSprouty >= 1000000 ? '+' : ''} -->
+                      <!-- ${numFormatter(withSprouty)}${
+      withSprouty >= 1000000 ? "+" : ""
+    } -->
                     </div>
                   </div>
 
@@ -289,9 +296,9 @@ window.addEventListener("DOMContentLoaded", ()=>{
         <!-- <script src="script.js"></script> -->
       </div>
     </div>
-    `
+    `;
   }
-})
+});
 
 var chartRange = "Monthly";
 var usercurrentFollowersCount = 0;
