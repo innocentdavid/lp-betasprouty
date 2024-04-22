@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
           <!-- gys -->
           <div id="dash-preview" class="p-[6.9375rem_1rem_2rem]">
             <div
-              class="py-5 px-2 lg:px-5 max-w-[1126px] mx-auto font-MontserratRegular"
+              class="py-5 px-0 lg:px-10 max-w-[1126px] mx-auto font-MontserratRegular"
             >
               <div
                 class="rounded-[14px] shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] overflow-hidden"
