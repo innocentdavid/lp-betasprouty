@@ -53,7 +53,6 @@ window.addEventListener("DOMContentLoaded", () => {
                         class="font-normal bg-[linear-gradient(90deg,_#b16cea_20%,_#ff5e69_60%,_#ff8a56_80%,_#ffa84b)] text-transparent bg-clip-text"
                         id="username1"
                       >
-                        <!-- @${user.username} -->
                       </span>
                     </div>
                     <div
@@ -168,7 +167,8 @@ window.addEventListener("DOMContentLoaded", () => {
                         <div
                           class="flex justify-center md:justify-start items-center gap-1 text-base lg:text-[20px] font-[500]"
                         >
-                          <span id="full_name"><!-- ${user.full_name} --></span>
+                          <span id="full_name">
+                          </span>
                           <img
                             alt=""
                             class="lg:hidden platform-logo"
@@ -181,7 +181,6 @@ window.addEventListener("DOMContentLoaded", () => {
                           class="mt-[6px] mb-3 text-[14px] leading-[16.8px] font-semibold text-[#5A6387]"
                           id="username"
                         >
-                          <!-- @${user.username} -->
                         </div>
                         <div class="flex items-center">
                           <div
@@ -212,7 +211,6 @@ window.addEventListener("DOMContentLoaded", () => {
                             id="follower_count"
                           >
                             <!-- 543 -->
-                            <!-- ${numFormatter(user.follower_count)} -->
                           </div>
                           <div
                             class="absolute lg:static top-[calc(100%-10px)] left-[50%] translate-x-[-50%] py-1 px-2 rounded-[7px] bg-[#c8f7e1] text-[#23df85] mt-1 hidden d-flex items-center gap-1 text-[10px] lg:text-[12px] font-bold font-MontserratBold lg:mr-[-32px] xl:mr-0"
@@ -249,9 +247,6 @@ window.addEventListener("DOMContentLoaded", () => {
                           id="with_sproutyVal"
                         >
                           <!-- 543 -->
-                          <!-- ${numFormatter(withSprouty)}${
-          withSprouty >= 1000000 ? "+" : ""
-        } -->
                         </div>
                       </div>
                       <div
@@ -267,7 +262,6 @@ window.addEventListener("DOMContentLoaded", () => {
                           id="without_sprouty"
                         >
                           <!-- 543 -->
-                          <!-- ${numFormatter(withoutSprouty)} -->
                         </div>
                       </div>
                     </div>
