@@ -57,7 +57,7 @@ export default function Footer() {
               <Link to={"/#video-reviews"} className="">Video Reviews</Link>
               <Link to={"/#reviews"} className="">Text Reviews</Link>
               <a href="https://blog.sproutysocial.com" className="">Blog</a>
-              <p className="">Contact Us</p>
+              <a href="mailto:support@sproutysocial.com" className="">Contact Us</a>
               <p className="">Press Kit</p>
               {/* <p className="">
                 Careers <span className="text-blue-500">— We're hiring</span>
