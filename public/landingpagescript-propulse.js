@@ -839,15 +839,15 @@ async function getUserData() {
   const username = getUsernameFromURL();
   if (!username) return { message: "no username" };
 
-  const url =""
-    // "https://instagram-bulk-profile-scrapper.p.rapidapi.com/clients/api/ig/ig_profile";
+  const url =
+    "https://instagram-bulk-profile-scrapper.p.rapidapi.com/clients/api/ig/ig_profile";
   const params = { ig: username, response_type: "short", corsEnabled: "true" };
 
   const options = {
     method: "GET",
     headers: {
-      // "X-RapidAPI-Key": "33407c8d8amsh1a7420e970e1dd6p16b479jsn8b3d18767a41",
-      // "X-RapidAPI-Host": "instagram-bulk-profile-scrapper.p.rapidapi.com",
+      "X-RapidAPI-Key": "33407c8d8amsh1a7420e970e1dd6p16b479jsn8b3d18767a41",
+      "X-RapidAPI-Host": "instagram-bulk-profile-scrapper.p.rapidapi.com",
     },
   };
 
